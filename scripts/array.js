@@ -427,8 +427,8 @@ $(document).ready(function () {
     });
     if (!item[1]) {
       const row = bedroomContainer.append(`
-      <div class="row">
-        <div class="card" style="width: 16rem;">
+      <div class="row mt-4">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" height="200px" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[0].name}</h5>
@@ -440,8 +440,8 @@ $(document).ready(function () {
       )
     } else if (!item[2]) {
       const row = bedroomContainer.append(`
-      <div class="row">
-        <div class="card" style="width: 16rem;">
+      <div class="row mt-4">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" height="200px" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[0].name}</h5>
@@ -449,7 +449,7 @@ $(document).ready(function () {
           </div>
           <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
         </div>
-        <div class="card" style="width: 16rem;">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[1].imgSrc[0]}" height="200px" class="card-img-top row-second-card" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[1].name}</h5>
@@ -462,8 +462,8 @@ $(document).ready(function () {
 
 
       const row = bedroomContainer.append(`
-      <div class="row">
-        <div class="card" style="width: 16rem;">
+      <div class="row mt-4">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" height="200px" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[0].name}</h5>
@@ -471,7 +471,7 @@ $(document).ready(function () {
           </div>
           <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
         </div>
-        <div class="card" style="width: 16rem;">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[1].imgSrc[0]}" height="200px" class="card-img-top row-second-card" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[1].name}</h5>
@@ -479,7 +479,7 @@ $(document).ready(function () {
           </div>
           <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
         </div>
-        <div class="card" style="width: 16rem;">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[2].imgSrc[0]}" height="200px" class="card-img-top row-third-card" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[2].name}</h5>
@@ -491,8 +491,8 @@ $(document).ready(function () {
         `);
     } else {
       const row = bedroomContainer.append(`
-      <div class="row">
-        <div class="card" style="width: 16rem;">
+      <div class="row mt-4">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" height="200px" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[0].name}</h5>
@@ -500,7 +500,7 @@ $(document).ready(function () {
           </div>
           <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
         </div>
-        <div class="card" style="width: 16rem;">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[1].imgSrc[0]}" height="200px" class="card-img-top row-second-card" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[1].name}</h5>
@@ -508,7 +508,7 @@ $(document).ready(function () {
           </div>
           <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
         </div>  
-        <div class="card" style="width: 16rem;">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[2].imgSrc[0]}" height="200px" class="card-img-top row-third-card" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[2].name}</h5>
@@ -516,7 +516,7 @@ $(document).ready(function () {
           </div>
           <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
         </div>
-        <div class="card" style="width: 16rem;">
+        <div class="card me-3" style="width: 15rem;">
           <img src="${item[3].imgSrc[0]}" height="200px" class="card-img-top row-fourth-card" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item[3].name}</h5>
