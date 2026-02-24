@@ -28,8 +28,8 @@
           <option value="">Dressing Table</option>
           <option value=""></option>
         </select>
-        <input class="form-control" type="search" placeholder="Search for Something" aria-label="Search" />
-        <button class="" type="submit">Search</button>
+        <input class="form-control search-input" type="search" placeholder="Search for Something" aria-label="Search" />
+        <button class="search-button" type="submit">Search</button>
       </div>
 
 
@@ -72,11 +72,10 @@
 
 
   </header>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3 border border-3 border-dark mx-3 rounded-3 mt-4" style="width: 300px; height: 250px;"></div>
-      <div class="bedroom-beds col-md-9"></div>
-    </div>
+  <h1 class="text-secondary mt-4 ms-5 text-center" id="not_find_anything"></h1>
+  <div class="container d-flex justify-content-center">
+    <div class="bedroom-beds"></div>
+  </div>
   </div>
   <script src="bootstrap file/bootstrap.bundle.min.js"></script>
   <script src="scripts/jquery-3.7.1.min.js"></script>
