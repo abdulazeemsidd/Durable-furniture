@@ -614,6 +614,79 @@ $(document).ready(function () {
     });
   });
 
+  image.on('click', function (event) {
+    const img = event.target;
+
+
+    bedroom.forEach(function (item) {
+      if (img.id == item.id) {
+        const price = item.price.discounted;
+        let quantity = 1;
+        $('.modal-body').html(`
+      <div class="row">
+              <div class="col-md-6">
+                <img src="${item.imgSrc[0]}" width="100%" class="main-display-image" alt="image not found">
+                <div class="display-images">
+                  <img src="${item.imgSrc[0]}" width="100px" alt="image not found" class="display-image">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <h1 class="mb-0">${item.fullname}</h1>
+                  <p  class="mb-0 mt-1 text-secondary">SKU: ${Math.round(Math.random() * 100000)}</p>
+                  <p  class="mb-0 text-secondary">Product Type: Bed</p>
+                  <p class="fs-3 mt-3 text-danger fw-bold">Rs. ${price} <del class="text-muted">Rs. ${item.price.original}</del></p>
+                  <div class="">
+              <h1>Description:</h1>
+              <p>${item.description}</p>
+              </div>
+                  <div>
+                    <p class="mb-1">Quantity:</p>
+                    <span class="rounded-pill p-2 border border-2">
+                      <button class="btn mb-1 fs-5 decrease-quantity">-</button><span class="quantity">${quantity}</span><button class="btn mb-1 increase-quantity">+</button>
+                    </span>
+                  </div>
+                  <p class="sub-total fs-4">Subtotal: <span class="text-success fs-4">Rs. ${quantity * price}</span></p>
+                  <button class="btn btn-outline-dark px-5 py-3 mt-2 rounded-pill">Buy Now</button>
+                  <button class="btn btn-outline-dark px-5 py-3 mt-2 rounded-pill">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+      `);
+        $('.increase-quantity').on('click', function () {
+          quantity++;
+          $('.quantity').html(quantity);
+          $('.sub-total').html(`Subtotal: <span class="text-success fs-4">Rs. ${quantity * price}</span>`);
+        })
+        $('.decrease-quantity').on('click', function () {
+          if (quantity > 1) {
+            quantity--;
+          }
+          $('.quantity').html(quantity);
+          $('.sub-total').html(`Subtotal: <span class="text-success fs-4">Rs. ${quantity * price}</span>`);
+        })
+        if (item.imgSrc[1] && item.imgSrc[2]) {
+          $('.display-images').append(`
+        <img src="${item.imgSrc[1]}" width="100px" alt="image not found" class="display-image">
+        <img src="${item.imgSrc[2]}" width="100px" alt="image not found" class="display-image"> 
+        `)
+        } else if (item.imgSrc[1]) {
+          $('.display-images').append(`
+        <img src="${item.imgSrc[1]}" width="100px" alt="image not found" class="display-image"> 
+        `)
+        }
+
+        $('.display-image').on('click', function (event) {
+          const imageSource = event.target.src;
+          $('.main-display-image')[0].src = imageSource;
+        })
+
+
+
+      }
+    })
+  })
+
   const searchButton = $('.search-button');
   const cardTitle = $('.card-title');
   searchButton.click(function () {
@@ -641,7 +714,7 @@ $(document).ready(function () {
   function generateHtml(item, container) {
     container.append(`
         <div class="card col-md-3 me-3 mb-3" style="width: 18rem;">
-          <img src="${item.imgSrc[0]}" class="card-img-top row-first-card" id=${item.id} height="200px" alt="...">
+          <img src="${item.imgSrc[0]}" class="card-img-top position-relative" data-bs-toggle="modal" data-bs-target="#product-backdrop" id=${item.id} height="200px" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text"><del class="text-secondary">Rs. ${item.price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item.price.discounted}</span></p>
@@ -650,5 +723,6 @@ $(document).ready(function () {
         </div>
         `
     );
+
   }
 }); 

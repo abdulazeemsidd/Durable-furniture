@@ -74,7 +74,7 @@
 /* cart icon , counting , account icon  */
 .cart-icon{
     position: relative;
-    
+    cursor:pointer;
 }
 .cart-icon div{
     color: white;
@@ -151,4 +151,20 @@
 
 .banner1{
     width: 100%;
+}
+
+.card-img-top{
+    cursor: pointer;
+}
+.display-images {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 5px;
+}
+
+.display-image {
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
 }
