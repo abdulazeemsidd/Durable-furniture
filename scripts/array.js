@@ -8,148 +8,140 @@ $(document).ready(function () {
   let bedsContainer = $('.bedroom-beds');
 
 
-  let bedroom = [];
-  let wardrobeArray = [
-    [
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe2.webp', 'pics/products/bedroom/wardrobe2-alt.webp'],
-        name: 'Savior 2 Door Wardrobe',
-        fullname: 'Savior 2 Door Wardrobe - Special Offer',
-        category: 'wardrobe',
-        price: {
-          original: 115000,
-          discounted: 75000
-        },
-        description: 'The Savior 2 Door Wardrobe is a simple and stylish 2-door bedroom wardrobe that combines practical storage with a clean design. It’s designed to store clothing, accessories, and other essentials neatly behind two full-height doors'
+  let bedroom = [
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe2.webp', 'pics/products/bedroom/wardrobe2-alt.webp'],
+      name: 'Savior 2 Door Wardrobe',
+      fullname: 'Savior 2 Door Wardrobe - Special Offer',
+      category: 'wardrobe',
+      price: {
+        original: 115000,
+        discounted: 75000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe3.webp', 'pics/products/bedroom/wardrobe3-alt.webp', 'pics/products/bedroom/wardrobe3-alt-2.webp'],
-        name: 'Novak 2 Door Wardrobe ',
-        fullname: 'Novak 2 Door Wardrobe S4049/1003',
-        category: 'wardrobe',
-        price: {
-          original: 155000,
-          discounted: 115000
-        },
-        description: 'The Novak 2 Door Wardrobe is a functional and slightly more feature-rich wardrobe that offers organized space for clothes and daily items.'
+      description: 'The Savior 2 Door Wardrobe is a simple and stylish 2-door bedroom wardrobe that combines practical storage with a clean design. It’s designed to store clothing, accessories, and other essentials neatly behind two full-height doors'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe3.webp', 'pics/products/bedroom/wardrobe3-alt.webp', 'pics/products/bedroom/wardrobe3-alt-2.webp'],
+      name: 'Novak 2 Door Wardrobe ',
+      fullname: 'Novak 2 Door Wardrobe S4049/1003',
+      category: 'wardrobe',
+      price: {
+        original: 155000,
+        discounted: 115000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe4.webp', 'pics/products/bedroom/wardrobe4-alt.webp', 'pics/products/bedroom/wardrobe4-alt-2.webp'],
-        name: 'Colvin Wardrobe',
-        fullname: 'Colvin Wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 185000,
-          discounted: 140000
-        },
-        description: 'The Colvin Wardrobe is a sleek storage unit with clean lines and ample hanging space, perfect for organized bedrooms. Its minimalist design suits modern interiors while keeping clothes and essentials tidy.'
+      description: 'The Novak 2 Door Wardrobe is a functional and slightly more feature-rich wardrobe that offers organized space for clothes and daily items.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe4.webp', 'pics/products/bedroom/wardrobe4-alt.webp', 'pics/products/bedroom/wardrobe4-alt-2.webp'],
+      name: 'Colvin Wardrobe',
+      fullname: 'Colvin Wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 185000,
+        discounted: 140000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe5.webp', 'pics/products/bedroom/wardrobe5-alt.webp'],
-        name: 'Parker 3 Door Wardrobe(Walnut)',
-        fullname: 'Parker 3 Door Wardrobe(Walnut)',
-        category: 'wardrobe',
-        price: {
-          original: 285000,
-          discounted: 200000
-        },
-        description: 'The Parker 3 Door Wardrobe in walnut finish offers generous storage with three doors, combining spacious hanging areas and shelving. Its warm wood tone and sturdy build make it ideal for both classic and contemporary bedrooms.'
+      description: 'The Colvin Wardrobe is a sleek storage unit with clean lines and ample hanging space, perfect for organized bedrooms. Its minimalist design suits modern interiors while keeping clothes and essentials tidy.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe5.webp', 'pics/products/bedroom/wardrobe5-alt.webp'],
+      name: 'Parker 3 Door Wardrobe(Walnut)',
+      fullname: 'Parker 3 Door Wardrobe(Walnut)',
+      category: 'wardrobe',
+      price: {
+        original: 285000,
+        discounted: 200000
       },
-    ],
-    [
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe6.webp', 'pics/products/bedroom/wardrobe6-alt.webp'],
-        name: 'Parker Small Sliding Wardrobe',
-        fullname: 'Parker Small Sliding Wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 165000,
-          discounted: 125000
-        },
-        description: 'The Parker Small Sliding Wardrobe features smooth sliding doors for space-saving convenience in compact rooms. It delivers practical storage with a stylish profile, perfect for modern small bedrooms or apartments.'
+      description: 'The Parker 3 Door Wardrobe in walnut finish offers generous storage with three doors, combining spacious hanging areas and shelving. Its warm wood tone and sturdy build make it ideal for both classic and contemporary bedrooms.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe6.webp', 'pics/products/bedroom/wardrobe6-alt.webp'],
+      name: 'Parker Small Sliding Wardrobe',
+      fullname: 'Parker Small Sliding Wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 165000,
+        discounted: 125000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe6.webp', 'pics/products/bedroom/wardrobe6-alt.webp'],
-        name: 'Parker Small Sliding Wardrobe',
-        fullname: 'Parker Small Sliding Wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 165000,
-          discounted: 125000
-        },
-        description: 'The Parker Small Sliding Wardrobe features smooth sliding doors for space-saving convenience in compact rooms. It delivers practical storage with a stylish profile, perfect for modern small bedrooms or apartments.'
+      description: 'The Parker Small Sliding Wardrobe features smooth sliding doors for space-saving convenience in compact rooms. It delivers practical storage with a stylish profile, perfect for modern small bedrooms or apartments.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe6.webp', 'pics/products/bedroom/wardrobe6-alt.webp'],
+      name: 'Parker Small Sliding Wardrobe',
+      fullname: 'Parker Small Sliding Wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 165000,
+        discounted: 125000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe7.webp', 'pics/products/bedroom/wardrobe7-alt.webp', 'pics/products/bedroom/wardrobe7-alt-2.webp'],
-        name: 'Emerson 4 Door Wardrobe',
-        fullname: 'Emerson 4 Door Wardrobe HFO-13 (Austin)',
-        category: 'wardrobe',
-        price: {
-          original: 365000,
-          discounted: 265000
-        },
-        description: 'The Emerson 4-Door Wardrobe offers generous storage with four doors, combining hanging space and shelving for organized clothes and accessories. Its clean, versatile design fits well in larger bedrooms while keeping everything easily accessible and neatly stored.'
+      description: 'The Parker Small Sliding Wardrobe features smooth sliding doors for space-saving convenience in compact rooms. It delivers practical storage with a stylish profile, perfect for modern small bedrooms or apartments.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe7.webp', 'pics/products/bedroom/wardrobe7-alt.webp', 'pics/products/bedroom/wardrobe7-alt-2.webp'],
+      name: 'Emerson 4 Door Wardrobe',
+      fullname: 'Emerson 4 Door Wardrobe HFO-13 (Austin)',
+      category: 'wardrobe',
+      price: {
+        original: 365000,
+        discounted: 265000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe8.webp', 'pics/products/bedroom/wardrobe8-alt.webp', 'pics/products/bedroom/wardrobe8-alt-2.webp'],
-        name: 'Pink Wardrobe',
-        fullname: 'Pink Wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 45000,
-          discounted: 25000
-        },
-        description: 'A pink wardrobe adds a fun and stylish pop of color to any bedroom, blending storage with personality. It provides practical space for clothes and accessories while enhancing the room’s decor with its cheerful,'
-      }
-    ],
-    [
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe9.webp', 'pics/products/bedroom/wardrobe9-alt.webp'],
-        name: 'Ozmane Dark Wardrobe',
-        fullname: 'Ozmane Dark Wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 78000,
-          discounted: 50000
-        },
-        description: 'The Ozmane Dark Wardrobe features a rich, deep finish that brings a bold, elegant look to bedroom storage. It offers roomy compartments and hanging space while making a stylish statement in modern or contemporary interiors.'
+      description: 'The Emerson 4-Door Wardrobe offers generous storage with four doors, combining hanging space and shelving for organized clothes and accessories. Its clean, versatile design fits well in larger bedrooms while keeping everything easily accessible and neatly stored.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe8.webp', 'pics/products/bedroom/wardrobe8-alt.webp', 'pics/products/bedroom/wardrobe8-alt-2.webp'],
+      name: 'Pink Wardrobe',
+      fullname: 'Pink Wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 45000,
+        discounted: 25000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe10.webp', 'pics/products/bedroom/wardrobe10-alt.webp'],
-        name: 'Nautical wardrobe',
-        fullname: 'Nautical wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 45000,
-          discounted: 25000
-        },
-        description: 'The Nautical Wardrobe captures classic seaside charm with ocean-inspired colors and subtle maritime details. Designed for both style and storage, it brings a fresh, breezy coastal feel to any bedroom while keeping essentials neatly organized.'
+      description: 'A pink wardrobe adds a fun and stylish pop of color to any bedroom, blending storage with personality. It provides practical space for clothes and accessories while enhancing the room’s decor with its cheerful,'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe9.webp', 'pics/products/bedroom/wardrobe9-alt.webp'],
+      name: 'Ozmane Dark Wardrobe',
+      fullname: 'Ozmane Dark Wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 78000,
+        discounted: 50000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe11.webp', 'pics/products/bedroom/wardrobe11-alt.webp', 'pics/products/bedroom/wardrobe11-alt-2.webp'],
-        name: 'Casey Wardrobe',
-        fullname: 'Casey Wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 35000,
-          discounted: 30000
-        },
-        description: 'The Casey Wardrobe is a modern minimalist storage solution with a clean yellow finish, offering simple yet stylish bedroom organization. Its sleek and neutral design makes it easy to blend with contemporary interiors.'
+      description: 'The Ozmane Dark Wardrobe features a rich, deep finish that brings a bold, elegant look to bedroom storage. It offers roomy compartments and hanging space while making a stylish statement in modern or contemporary interiors.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe10.webp', 'pics/products/bedroom/wardrobe10-alt.webp'],
+      name: 'Nautical wardrobe',
+      fullname: 'Nautical wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 45000,
+        discounted: 25000
       },
-      {
-        imgSrc: ['pics/products/bedroom/wardrobe12.webp',],
-        name: 'Classic White Wardrobe',
-        fullname: 'Classic White Wardrobe',
-        category: 'wardrobe',
-        price: {
-          original: 88000,
-          discounted: 49000
-        },
-        description: 'The Classic White Wardrobe features a timeless, clean white finish that fits easily into any bedroom style. Its simple design offers practical storage while maintaining a bright and elegant look.,'
-      }
-    ]];
-  let tablesArray = [
-    [{
+      description: 'The Nautical Wardrobe captures classic seaside charm with ocean-inspired colors and subtle maritime details. Designed for both style and storage, it brings a fresh, breezy coastal feel to any bedroom while keeping essentials neatly organized.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe11.webp', 'pics/products/bedroom/wardrobe11-alt.webp', 'pics/products/bedroom/wardrobe11-alt-2.webp'],
+      name: 'Casey Wardrobe',
+      fullname: 'Casey Wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 35000,
+        discounted: 30000
+      },
+      description: 'The Casey Wardrobe is a modern minimalist storage solution with a clean yellow finish, offering simple yet stylish bedroom organization. Its sleek and neutral design makes it easy to blend with contemporary interiors.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/wardrobe12.webp',],
+      name: 'Classic White Wardrobe',
+      fullname: 'Classic White Wardrobe',
+      category: 'wardrobe',
+      price: {
+        original: 88000,
+        discounted: 49000
+      },
+      description: 'The Classic White Wardrobe features a timeless, clean white finish that fits easily into any bedroom style. Its simple design offers practical storage while maintaining a bright and elegant look.,'
+    },
+    {
       imgSrc: ['pics/products/bedroom/bedroom-table-1.webp', 'pics/products/bedroom/bedroom-table-1-alt.webp', 'pics/products/bedroom/bedroom-table-1-alt-2.webp'],
       name: 'Kade Side Table',
       fullname: 'Kade Side Table',
@@ -192,7 +184,8 @@ $(document).ready(function () {
         discounted: 19000
       },
       description: 'The Sausalito 8 Drawer Dresser is a stylish and practical storage solution designed to keep your bedroom neat and organized. Featuring eight spacious drawers, it provides plenty of space for clothing, accessories, and personal items while helping maintain a clean, clutter-free room.'
-    }], [{
+    },
+    {
       imgSrc: ['pics/products/bedroom/table3.webp', 'pics/products/bedroom/table3-alt.webp', 'pics/products/bedroom/table3-alt-2.webp'],
       name: 'Zack Nested Tables Set',
       fullname: 'Zack Nested Tables Set',
@@ -235,8 +228,8 @@ $(document).ready(function () {
         discounted: 3000
       },
       description: 'The Oscar Side Table is a modern and compact bedside storage piece with a simple elegant design. It offers convenient storage for bedroom essentials while adding a clean, stylish touch to any room.'
-    }],
-    [{
+    },
+    {
       imgSrc: ['pics/products/bedroom/table9.webp', 'pics/products/bedroom/table9-alt.webp', 'pics/products/bedroom/table9-alt-2.webp'],
       name: 'Kingsley Side Table',
       fullname: 'Kingsley Side Table',
@@ -257,9 +250,8 @@ $(document).ready(function () {
         discounted: 10000
       },
       description: 'The Marigold Side Table is a modern, compact bedside storage piece with a soft marigold yellow finish. It adds a bright, cheerful touch to bedrooms while keeping essentials neatly stored and easily accessible.'
-    },],
-  ];
-  let dressersArray = [[
+    },
+
     {
       imgSrc: ['pics/products/bedroom/mirror1.webp', 'pics/products/bedroom/mirror1-alt.webp'],
       name: 'Simple Mirror',
@@ -304,7 +296,6 @@ $(document).ready(function () {
       },
       description: 'The Remington Dresser blends modern elegance with practical storage, offering generously sized drawers for everyday essentials. Its sleek finish and sturdy construction make it a timeless addition to any bedroom setting.'
     },
-  ], [
     {
       imgSrc: ['pics/products/bedroom/dresser8.webp', 'pics/products/bedroom/dresser8-alt.webp', 'pics/products/bedroom/dresser8-alt-2.webp'],
       name: 'Harry Dresser',
@@ -349,8 +340,6 @@ $(document).ready(function () {
       },
       description: 'The Ozmane Dark Tune Dresser features a rich, deep finish that adds warmth and sophistication to your bedroom. With spacious drawers and a sleek design, it offers both elegance and practical storage in one refined piece.'
     },
-  ],
-  [
     {
       imgSrc: ['pics/products/bedroom/dresser6.webp', 'pics/products/bedroom/dresser6-alt.webp', 'pics/products/bedroom/dresser6-alt-2.webp'],
       name: 'Eden Dresser with mirror',
@@ -395,9 +384,8 @@ $(document).ready(function () {
       },
       description: 'The RIA Wall Mirror features a graceful full-length arch design that adds elegance and depth to any room. Framed in warm wood, it blends modern style with natural charm, making it a perfect statement piece for bedrooms, hallways, or dressing areas.'
     },
-  ]];
-  let bedsArray = [
-    [{
+
+    {
       imgSrc: ['pics/products/bedroom/bed1.webp', 'pics/products/bedroom/bed1-alt.webp', 'pics/products/bedroom/bed1-alt-2.webp'],
       name: 'Plato King Sized Bed',
       fullname: 'Plato King Sized Bed',
@@ -440,100 +428,96 @@ $(document).ready(function () {
         discounted: 40000
       },
       description: 'The Jack King/Queen Sized Bed is designed with simplicity, comfort, and practicality in mind. Its clean lines and balanced structure make it a perfect fit for both modern and classic interiors.'
-    }], [
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed6.webp', 'pics/products/bedroom/bed6-alt.webp', 'pics/products/bedroom/bed6-alt-2.webp'],
+      name: 'Marq King Sized Bed With Side Tables',
+      fullname: 'Marq King Sized Bed With Side Tables',
+      category: 'bed',
+      price: {
+        original: 73000,
+        discounted: 49000
+      },
+      description: 'The Marq King Sized Bed brings a touch of European-inspired elegance to your bedroom. With its graceful design and balanced proportions, it creates a serene and sophisticated atmosphere.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed5.webp', 'pics/products/bedroom/bed5-alt.webp', 'pics/products/bedroom/bed5-alt-2.webp'],
+      name: 'Vincent King Sized Bed With Side Tables',
+      fullname: 'Vincent King Sized Bed With Side Tables',
+      category: 'bed',
+      price: {
+        original: 69000,
+        discounted: 49000
+      },
+      description: 'The Vincent King Sized Bed brings a touch of European-inspired elegance to your bedroom. With its graceful design and balanced proportions, it creates a serene and sophisticated atmosphere.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed7.webp', 'pics/products/bedroom/bed7-alt.webp', 'pics/products/bedroom/bed7-alt-2.webp'],
+      name: 'Ozmane Dark tune Set',
+      fullname: 'Ozmane Dark tune Set (bed with sides, dresser and mirror)',
+      category: 'bed',
+      price: {
+        original: 180000,
+        discounted: 90000
+      },
+      description: 'The Ozmane Dark Tune Set is a complete bedroom furniture collection designed for elegance and functionality. This set includes a bed with side tables, a dresser, and a matching mirror, all finished in a rich dark tone that adds warmth and sophistication to your bedroom.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed8.webp', 'pics/products/bedroom/bed8-alt.webp'],
+      name: 'Ozmane Dark tune Bed (set)',
+      fullname: 'Ozmane Dark tune king size Bed with two side table',
+      category: 'bed',
+      price: {
+        original: 150000,
+        discounted: 75000
+      },
+      description: 'The Ozmane Dark Tune King Size Bed with Two Side Tables is a stylish and practical bedroom centerpiece. Designed with a rich dark finish, it brings a warm, modern elegance to any bedroom interior. \n Built with a strong and durable frame, the king-size bed provides spacious comfort and reliable support for restful sleep. The two matching side tables add convenience, giving you space to keep essentials like lamps, books, or personal items within easy reach.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed11.webp', 'pics/products/bedroom/bed11-alt.webp', 'pics/products/bedroom/bed11-alt-2.webp'],
+      name: 'Ethereal Queen-Sized Bed',
+      fullname: 'Ethereal Queen-Sized Bed With Side Table',
+      category: 'bed',
+      price: {
+        original: 350000,
+        discounted: 180000
+      },
+      description: 'The Ethereal Queen Bed features a dreamy, soft aesthetic with elegant finishes and light, airy design elements. Perfect for modern bedrooms, it creates a calm and graceful sleeping space.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed12.webp', 'pics/products/bedroom/bed12-alt.webp', 'pics/products/bedroom/bed12-alt-2.webp'],
+      name: 'James Bed Set',
+      fullname: 'James Bed Set (Full Bundle)',
+      category: 'bed',
+      price: {
+        original: 350000,
+        discounted: 150000
+      },
+      description: 'The James Bed Set is a modern bedroom furniture set featuring a sturdy bed frame along with matching side tables. It offers a clean, balanced design with practical storage and a contemporary look, making it suitable for simple and stylish bedrooms.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed9.webp', 'pics/products/bedroom/bed9-alt.webp', 'pics/products/bedroom/bed9-alt-2.webp'],
+      name: 'Jack Single Bed',
+      fullname: 'Jack Single Bed',
+      category: 'bed',
+      price: {
+        original: 35000,
+        discounted: 20000
+      },
+      description: 'The Jack Single Bed is a simple, practical, and comfortable bedding solution designed for everyday use. Its clean and compact design makes it perfect for small bedrooms, guest rooms, or shared spaces.'
+    },
+    {
+      imgSrc: ['pics/products/bedroom/bed10.webp', 'pics/products/bedroom/bed10-alt.webp', 'pics/products/bedroom/bed10-alt-2.webp'],
+      name: 'Sausalito Cane Bed',
+      fullname: 'Sausalito Cane Bed',
+      category: 'bed',
+      price: {
+        original: 95000,
+        discounted: 45000
+      },
+      description: 'The Sausalito Cane Bed brings natural texture and relaxed elegance to your bedroom. With its stylish cane detailing and smooth finish, this bed combines timeless charm with contemporary design — perfect for creating a warm, inviting atmosphere.'
+    },
 
-
-      {
-        imgSrc: ['pics/products/bedroom/bed6.webp', 'pics/products/bedroom/bed6-alt.webp', 'pics/products/bedroom/bed6-alt-2.webp'],
-        name: 'Marq King Sized Bed With Side Tables',
-        fullname: 'Marq King Sized Bed With Side Tables',
-        category: 'bed',
-        price: {
-          original: 73000,
-          discounted: 49000
-        },
-        description: 'The Marq King Sized Bed brings a touch of European-inspired elegance to your bedroom. With its graceful design and balanced proportions, it creates a serene and sophisticated atmosphere.'
-      },
-      {
-        imgSrc: ['pics/products/bedroom/bed5.webp', 'pics/products/bedroom/bed5-alt.webp', 'pics/products/bedroom/bed5-alt-2.webp'],
-        name: 'Vincent King Sized Bed With Side Tables',
-        fullname: 'Vincent King Sized Bed With Side Tables',
-        category: 'bed',
-        price: {
-          original: 69000,
-          discounted: 49000
-        },
-        description: 'The Vincent King Sized Bed brings a touch of European-inspired elegance to your bedroom. With its graceful design and balanced proportions, it creates a serene and sophisticated atmosphere.'
-      },
-      {
-        imgSrc: ['pics/products/bedroom/bed7.webp', 'pics/products/bedroom/bed7-alt.webp', 'pics/products/bedroom/bed7-alt-2.webp'],
-        name: 'Ozmane Dark tune Set',
-        fullname: 'Ozmane Dark tune Set (bed with sides, dresser and mirror)',
-        category: 'bed',
-        price: {
-          original: 180000,
-          discounted: 90000
-        },
-        description: 'The Ozmane Dark Tune Set is a complete bedroom furniture collection designed for elegance and functionality. This set includes a bed with side tables, a dresser, and a matching mirror, all finished in a rich dark tone that adds warmth and sophistication to your bedroom.'
-      },
-      {
-        imgSrc: ['pics/products/bedroom/bed8.webp', 'pics/products/bedroom/bed8-alt.webp'],
-        name: 'Ozmane Dark tune Bed (set)',
-        fullname: 'Ozmane Dark tune king size Bed with two side table',
-        category: 'bed',
-        price: {
-          original: 150000,
-          discounted: 75000
-        },
-        description: 'The Ozmane Dark Tune King Size Bed with Two Side Tables is a stylish and practical bedroom centerpiece. Designed with a rich dark finish, it brings a warm, modern elegance to any bedroom interior. \n Built with a strong and durable frame, the king-size bed provides spacious comfort and reliable support for restful sleep. The two matching side tables add convenience, giving you space to keep essentials like lamps, books, or personal items within easy reach.'
-      },
-    ], [
-      {
-        imgSrc: ['pics/products/bedroom/bed11.webp', 'pics/products/bedroom/bed11-alt.webp', 'pics/products/bedroom/bed11-alt-2.webp'],
-        name: 'Ethereal Queen-Sized Bed',
-        fullname: 'Ethereal Queen-Sized Bed With Side Table',
-        category: 'bed',
-        price: {
-          original: 350000,
-          discounted: 180000
-        },
-        description: 'The Ethereal Queen Bed features a dreamy, soft aesthetic with elegant finishes and light, airy design elements. Perfect for modern bedrooms, it creates a calm and graceful sleeping space.'
-      },
-      {
-        imgSrc: ['pics/products/bedroom/bed12.webp', 'pics/products/bedroom/bed12-alt.webp', 'pics/products/bedroom/bed12-alt-2.webp'],
-        name: 'James Bed Set',
-        fullname: 'James Bed Set (Full Bundle)',
-        category: 'bed',
-        price: {
-          original: 350000,
-          discounted: 150000
-        },
-        description: 'The James Bed Set is a modern bedroom furniture set featuring a sturdy bed frame along with matching side tables. It offers a clean, balanced design with practical storage and a contemporary look, making it suitable for simple and stylish bedrooms.'
-      },
-      {
-        imgSrc: ['pics/products/bedroom/bed9.webp', 'pics/products/bedroom/bed9-alt.webp', 'pics/products/bedroom/bed9-alt-2.webp'],
-        name: 'Jack Single Bed',
-        fullname: 'Jack Single Bed',
-        category: 'bed',
-        price: {
-          original: 35000,
-          discounted: 20000
-        },
-        description: 'The Jack Single Bed is a simple, practical, and comfortable bedding solution designed for everyday use. Its clean and compact design makes it perfect for small bedrooms, guest rooms, or shared spaces.'
-      },
-      {
-        imgSrc: ['pics/products/bedroom/bed10.webp', 'pics/products/bedroom/bed10-alt.webp', 'pics/products/bedroom/bed10-alt-2.webp'],
-        name: 'Sausalito Cane Bed',
-        fullname: 'Sausalito Cane Bed',
-        category: 'bed',
-        price: {
-          original: 95000,
-          discounted: 45000
-        },
-        description: 'The Sausalito Cane Bed brings natural texture and relaxed elegance to your bedroom. With its stylish cane detailing and smooth finish, this bed combines timeless charm with contemporary design — perfect for creating a warm, inviting atmosphere.'
-      },
-    ]];
-  let chairsArray = [[
     {
       imgSrc: ['pics/products/bedroom/sofa1.webp', 'pics/products/bedroom/sofa1-alt.webp', 'pics/products/bedroom/sofa1-alt-2.webp'],
       name: 'Billy 2 Seater Sofa',
@@ -577,78 +561,59 @@ $(document).ready(function () {
         discounted: 17000
       },
       description: 'The Moda Chair features a sleek, contemporary design that blends comfort with modern style. Its smooth upholstery and sturdy frame make it a stylish and practical seating choice for any room.'
-    }],
-  [{
-    imgSrc: ['pics/products/bedroom/chair3.webp', 'pics/products/bedroom/chair3-alt.webp', 'pics/products/bedroom/chair3-alt-2.webp'],
-    name: 'Alexa Sofa Chair',
-    fullname: 'Alexa Sofa Chair',
-    category: 'bedroom-chair',
-    price: {
-      original: 48000,
-      discounted: 39000
     },
-    description: 'The Alexa Sofa Chair features a stylish, modern design with soft cushioning for comfortable everyday seating. Its elegant finish and sturdy frame make it a great addition to living rooms, bedrooms, or lounges.'
-  }],
+    {
+      imgSrc: ['pics/products/bedroom/chair3.webp', 'pics/products/bedroom/chair3-alt.webp', 'pics/products/bedroom/chair3-alt-2.webp'],
+      name: 'Alexa Sofa Chair',
+      fullname: 'Alexa Sofa Chair',
+      category: 'bedroom-chair',
+      price: {
+        original: 48000,
+        discounted: 39000
+      },
+      description: 'The Alexa Sofa Chair features a stylish, modern design with soft cushioning for comfortable everyday seating. Its elegant finish and sturdy frame make it a great addition to living rooms, bedrooms, or lounges.'
+    }
   ];
-  tablesArray.forEach(function (item) {
-    createId(item)
-    bedroom.push(item);
-    generateHtml(item, tablesContainer);
-  })
-  dressersArray.forEach(function (item) {
-    createId(item)
-    bedroom.push(item);
-    generateHtml(item, dressersContainer);
-  })
-  bedsArray.forEach(function (item) {
-    createId(item)
-    bedroom.push(item);
-    generateHtml(item, bedsContainer);
-  })
-  wardrobeArray.forEach(function (item) {
-    createId(item)
-    bedroom.push(item);
-    generateHtml(item, wardrobeContainer);
-  })
-  chairsArray.forEach(function (item) {
-    createId(item);
-    bedroom.push(item);
-    generateHtml(item, chairsContainer);
-  })
+
   bedroom.forEach(function (item) {
+    createId(item)
     generateHtml(item, bedroomContainer);
+    if (item.category == 'bed') {
+      generateHtml(item, bedsContainer);
+    } else if (item.category == 'bedroom-chair') {
+      generateHtml(item, chairsContainer);
+    } else if (item.category == 'wardrobe') {
+      generateHtml(item, wardrobeContainer);
+    } else if (item.category == 'dresser') {
+      generateHtml(item, dressersContainer);
+    } else {
+      generateHtml(item, tablesContainer)
+    }
   });
   function createId(item) {
-    item.forEach(function (product) {
-      product.id = crypto.randomUUID();
-
-    });
+    item.id = crypto.randomUUID();
   }
 
   const image = $('.card img');
-  let row = $('.row');
 
   image.on('mouseenter', function (event) {
     const img = event.target;
-    bedroom.forEach(function (array) {
-      array.forEach(function (product) {
-        if (img.id == product.id && product.imgSrc[1]) {
-          img.src = product.imgSrc[1]
-        }
-      });
+    bedroom.forEach(function (product) {
+      if (img.id == product.id && product.imgSrc[1]) {
+        img.src = product.imgSrc[1]
+      }
     })
 
   })
   image.on('mouseleave', function (event) {
     const img = event.target;
-    bedroom.forEach(function (array) {
-      array.forEach(function (product) {
-        if (img.id == product.id) {
-          img.src = product.imgSrc[0]
-        }
-      });
-    })
-  })
+    bedroom.forEach(function (product) {
+      if (img.id == product.id) {
+        img.src = product.imgSrc[0]
+      }
+    });
+  });
+
   const searchButton = $('.search-button');
   const cardTitle = $('.card-title');
   searchButton.click(function () {
@@ -663,17 +628,6 @@ $(document).ready(function () {
       } else {
         card.style.display = 'none';
       }
-      // for (let i = 0; i < row.length; i++) {
-      //   const seperateRow = row[i];
-      //   const firstCard = seperateRow.children[0];
-      //   const secondCard = seperateRow.children[1];
-      //   const thirdCard = seperateRow.children[2];
-      //   const fourthCard = seperateRow.children[3];
-
-      //   if (firstCard.style.display == 'none') {
-      //     seperateRow.style.display = 'none';
-      //   }
-      // }
 
       if (checker > 0) {
         $('#not_find_anything').text("");
@@ -685,104 +639,16 @@ $(document).ready(function () {
   });
 
   function generateHtml(item, container) {
-    if (!item[1]) {
-      container.append(`
-      <div class="row mt-4">
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" id=${item[0].id} height="200px" alt="...">
+    container.append(`
+        <div class="card col-md-3 me-3 mb-3" style="width: 18rem;">
+          <img src="${item.imgSrc[0]}" class="card-img-top row-first-card" id=${item.id} height="200px" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${item[0].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[0].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[0].price.discounted}</span></p>
+            <h5 class="card-title">${item.name}</h5>
+            <p class="card-text"><del class="text-secondary">Rs. ${item.price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item.price.discounted}</span></p>
           </div>
           <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
         </div>
-        </div>`
-      )
-    } else if (!item[2]) {
-      container.append(`
-      <div class="row mt-4">
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" id=${item[0].id} height="200px" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[0].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[0].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[0].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div>
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[1].imgSrc[0]}" height="200px" class="card-img-top row-second-card" id=${item[1].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[1].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[1].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[1].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div> `
-      )
-    } else if (!item[3]) {
-      container.append(`
-      <div class="row mt-4">
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" height="200px" id=${item[0].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[0].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[0].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[0].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div>
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[1].imgSrc[0]}" height="200px" class="card-img-top row-second-card" id=${item[1].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[1].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[1].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[1].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div>
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[2].imgSrc[0]}" height="200px" class="card-img-top row-third-card" id=${item[2].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[2].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[2].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[2].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div> 
-      </div>
-        `);
-    } else {
-      container.append(`
-      <div class="row mt-4">
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[0].imgSrc[0]}" class="card-img-top row-first-card" height="200px" id=${item[0].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[0].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[0].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[0].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div>
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[1].imgSrc[0]}" height="200px" class="card-img-top row-second-card" id=${item[1].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[1].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[1].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[1].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div>  
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[2].imgSrc[0]}" height="200px" class="card-img-top row-third-card" id=${item[2].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[2].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[2].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[2].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div>
-        <div class="card me-3" style="width: 15rem;">
-          <img src="${item[3].imgSrc[0]}" height="200px" class="card-img-top row-fourth-card" id=${item[3].id} alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${item[3].name}</h5>
-            <p class="card-text"><del class="text-secondary">Rs. ${item[3].price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item[3].price.discounted}</span></p>
-          </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
-        </div>
-        `);
-    }
+        `
+    );
   }
 }); 
