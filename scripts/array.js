@@ -16,7 +16,7 @@ $(document).ready(function () {
   let officeRoomWorkstation = $('.office-room-workstation');
   let officeRoomReception = $('.office-room-reception');
   let officeRoomCredenza = $('.office-room-credenza');
-  let officeRoomChairs = $('.office-room-chairs')
+  let officeRoomChairs = $('.office-room-chairs');
 
   const hamburger = $('#hamburger');
   const navLinks = $('#nav-links');
@@ -27,6 +27,7 @@ $(document).ready(function () {
 
 
   let products = [
+    //bedroom
     {
       imgSrc: ['../pics/products/bedroom/wardrobe2.webp', '../pics/products/bedroom/wardrobe2-alt.webp'],
       name: 'Savior 2 Door Wardrobe',
@@ -621,6 +622,10 @@ $(document).ready(function () {
       },
       description: 'A modern bedroom chair set featuring sleek designs and a coordinating table for added style and utility. Ideal for lounging, reading, or casual conversations, it enhances comfort and complements your bedroom decor.'
     },
+
+    //bedroom finished
+
+    // dining room
     {
       imgSrc: ['../pics/products/dining-room/table1.webp', '../pics/products/dining-room/table1-alt.webp', '../pics/products/dining-room/table1-alt-2.webp'],
       name: 'Shane Dining Table',
@@ -632,6 +637,349 @@ $(document).ready(function () {
       },
       description: 'Shane Dining Table with 4 Ease Chairs is a modern and functional 4-seater set designed for comfortable everyday dining and small gatherings, combining durability with a sleek, elegant finish. Its compact design, sturdy construction, and comfortable seating make it a perfect addition to any contemporary dining space.'
     },
+    {
+      imgSrc: ['../pics/products/dining-room/table4.webp', '../pics/products/dining-room/table4-alt.webp', '../pics/products/dining-room/table4-alt-2.webp'],
+      name: 'Shane Dining Table',
+      fullname: 'Shane 4 Person Dining Table',
+      category: 'dining-table',
+      price: {
+        original: 25000,
+        discounted: 19000
+      },
+      description: 'Shane 4 Person Dining Table is a sleek and modern dining table designed for four people, crafted with durable laminated material and a low-height design for relaxed floor seating. It’s perfect for small spaces and casual gatherings, combining contemporary style with comfort thanks to its included cushions.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table2.webp', '../pics/products/dining-room/table2-alt.webp', '../pics/products/dining-room/table2-alt-2.webp'],
+      name: 'Linna Foldable Dining Table',
+      fullname: 'Linna Foldable 4 Person Dining Table',
+      category: 'dining-table',
+      price: {
+        original: 53000,
+        discounted: 28000
+      },
+      description: 'Linna Foldable 4 Person Dining Table is a sleek and space-saving foldable dining table set designed for four people, crafted with durable laminated material and low-height design for relaxed floor seating. It’s perfect for small spaces and casual gatherings, combining modern style with comfort thanks to its included cushions.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table3.webp', '../pics/products/dining-room/table3-alt.webp', '../pics/products/dining-room/table3-alt-2.webp'],
+      name: 'Muslim 04 Person Dining Table',
+      fullname: 'Muslim 04 Person Dining Table with 4 Chairs',
+      category: 'dining-table',
+      price: {
+        original: 38000,
+        discounted: 18000
+      },
+      description: 'Muslim 04 Person Dining Table with 4 Chairs is a modern and functional 4-seater set designed for comfortable everyday dining and small gatherings, combining durability with a sleek, elegant finish. Its compact design, sturdy construction, and comfortable seating make it a perfect addition to any contemporary dining space.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table5.webp', '../pics/products/dining-room/table5-alt.webp'],
+      name: 'Gravil Dining Table',
+      fullname: 'Gravil 6 Person Dining Table with 6 Ease Chairs',
+      category: 'dining-table',
+      price: {
+        original: 145000,
+        discounted: 85000
+      },
+      description: 'Gravil 6 Person Dining Table with 6 Ease Chairs is a modern and functional 6-seater set designed for comfortable everyday dining and small gatherings, combining durability with a sleek, elegant finish. Its compact design, sturdy construction, and comfortable seating make it a perfect addition to any contemporary dining space.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table6.webp', '../pics/products/dining-room/table6-alt.webp', '../pics/products/dining-room/table6-alt-2.webp'],
+      name: 'Savior Dining Table',
+      fullname: 'Savior dining with 2 Stool & Bench',
+      category: 'dining-table',
+      price: {
+        original: 73000,
+        discounted: 55000
+      },
+      description: 'Savior dining with 2 Stool & Bench is a modern and functional 6-seater set designed for comfortable everyday dining and small gatherings, combining durability with a sleek, elegant finish. Its compact design, sturdy construction, and comfortable seating make it a perfect addition to any contemporary dining space.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table7.webp', '../pics/products/dining-room/table7-alt.webp', '../pics/products/dining-room/table7-alt-2.webp'],
+      name: 'Finn Dining Table',
+      fullname: 'Finn dining with 4 Stool',
+      category: 'dining-table',
+      price: {
+        original: 66000,
+        discounted: 33000
+      },
+      description: 'A sleek and contemporary set designed for modern living spaces, the Finn Dining Table with 4 Stools combines clean lines with practical comfort. Crafted with durable materials and a minimalist aesthetic, this dining set is perfect for casual meals, small gatherings, or as a stylish workspace in compact areas.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table8.webp', '../pics/products/dining-room/table8-alt.webp', '../pics/products/dining-room/table8-alt-2.webp'],
+      name: 'Harry Dining Table',
+      fullname: 'Harry 4 Person Dining Table',
+      category: 'dining-table',
+      price: {
+        original: 66000,
+        discounted: 33000
+      },
+      description: 'A timeless dining solution, the Harry 4‑Person Dining Table blends classic craftsmanship with everyday functionality. Crafted from high-quality materials, it offers a sturdy and elegant surface for meals, gatherings, or work. Its versatile design complements various interior styles, making it a perfect centerpiece for any dining space.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table9.webp', '../pics/products/dining-room/table9-alt.webp', '../pics/products/dining-room/table9-alt-2.webp'],
+      name: 'Harry 6 Person Dining Table',
+      fullname: 'Harry 6 Person Dining Table with 6 Chairs',
+      category: 'dining-table',
+      price: {
+        original: 135000,
+        discounted: 94800
+      },
+      description: 'An elegant and spacious dining set, the Harry 6‑Person Dining Table with 6 Chairs transforms any dining space into a welcoming gathering place. Crafted from high-quality materials, it offers a sturdy and stylish surface for meals, celebrations, or work. The included chairs provide comfortable seating, while the timeless design complements various interior styles, making it a perfect centerpiece for family dinners or entertaining guests.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/table10.webp', '../pics/products/dining-room/table10-alt.webp', '../pics/products/dining-room/table10-alt-2.webp'],
+      name: 'Hendrick 4 person dining table',
+      fullname: 'Hendrick 4 person dining table',
+      category: 'dining-table',
+      price: {
+        original: 135000,
+        discounted: 94800
+      },
+      description: 'The Hendrick 4‑Person Dining Table is a sophisticated seating solution that combines contemporary design with practical functionality. Featuring a sleek rectangular top with clean lines and a sturdy base structure, this table accommodates four diners in comfort and style, making it ideal for modern apartments, cozy dining nooks, and compact family kitchens.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair1.webp', '../pics/products/dining-room/chair1-alt.webp', '../pics/products/dining-room/chair1-alt-2.webp'],
+      name: 'Sora Dining Chair',
+      fullname: 'Sora Dining Chair – Modern Molded Seat with Cushion (Pink, Grey, White, Black, Yellow)',
+      category: 'dining-chairs',
+      price: {
+        original: 18000,
+        discounted: 9480
+      },
+      description: 'The Sora Dining Chair features a modern molded seat with a cushion for added comfort and style. Its sleek design and neutral color options make it a versatile addition to any dining room.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair2.webp', '../pics/products/dining-room/chair2-alt.webp', '../pics/products/dining-room/chair2-alt-2.webp'],
+      name: 'Torrey Chair Outdoor',
+      fullname: 'Torrey Chair Outdoor',
+      category: 'dining-chairs',
+      price: {
+        original: 28000,
+        discounted: 16900
+      },
+      description: 'The Torrey Chair Outdoor is designed for durability and comfort in outdoor settings. Its weather-resistant materials and sleek design make it a perfect addition to any patio or garden.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair3.webp', '../pics/products/dining-room/chair3-alt.webp', '../pics/products/dining-room/chair3-alt-2.webp'],
+      name: 'Torrey Chair Outdoor',
+      fullname: 'Torrey Chair Outdoor',
+      category: 'dining-chairs',
+      price: {
+        original: 28000,
+        discounted: 16900
+      },
+      description: 'The Torrey Chair Outdoor is designed for durability and comfort in outdoor settings. Its weather-resistant materials and sleek design make it a perfect addition to any patio or garden.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair4.webp', '../pics/products/dining-room/chair4-alt.webp', '../pics/products/dining-room/chair4-alt-2.webp'],
+      name: 'Torrey Chair Outdoor',
+      fullname: 'Torrey Chair Outdoor',
+      category: 'dining-chairs',
+      price: {
+        original: 28000,
+        discounted: 16900
+      },
+      description: 'The Torrey Chair Outdoor is designed for durability and comfort in outdoor settings. Its weather-resistant materials and sleek design make it a perfect addition to any patio or garden.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair5.webp', '../pics/products/dining-room/chair5-alt.webp'],
+      name: 'Torrey Chair Outdoor',
+      fullname: 'Torrey Chair Outdoor',
+      category: 'dining-chairs',
+      price: {
+        original: 28000,
+        discounted: 16900
+      },
+      description: 'The Torrey Chair Outdoor is designed for durability and comfort in outdoor settings. Its weather-resistant materials and sleek design make it a perfect addition to any patio or garden.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair6.webp', '../pics/products/dining-room/chair6-alt.webp', '../pics/products/dining-room/chair6-alt-2.webp'],
+      name: '1 Pc Cafeteria Chair',
+      fullname: '1 Pc Cafeteria Chair',
+      category: 'dining-chairs',
+      price: {
+        original: 14000,
+        discounted: 7600
+      },
+      description: 'The 1 Pc Cafeteria Chair is designed for durability and comfort in cafeteria settings. Its sturdy construction and ergonomic design make it a perfect addition to any dining area.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair7.webp', '../pics/products/dining-room/chair7-alt.webp', '../pics/products/dining-room/chair7-alt-2.webp'],
+      name: 'Mid-Century Chair',
+      fullname: 'Mid-Century Chair',
+      category: 'dining-chairs',
+      price: {
+        original: 34500,
+        discounted: 19500
+      },
+      description: 'The Mid-Century Chair is designed for comfort and style in any dining room. Its classic design and high-quality materials make it a timeless addition to your home.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair8.webp', '../pics/products/dining-room/chair8-alt.webp', '../pics/products/dining-room/chair8-alt-2.webp'],
+      name: 'Cane Charm Armless Chair',
+      fullname: 'Cane Charm Armless Chair – Plastic Frame with Woven Cane‑Style Seat & Back (Black)',
+      category: 'dining-chairs',
+      price: {
+        original: 18500,
+        discounted: 12500
+      },
+      description: 'The Cane Charm Armless Chair is a versatile seating piece that celebrates natural aesthetics and lightweight comfort. Featuring handcrafted cane paneling on the backrest and sides, this chair brings warmth and texture to any space while maintaining a clean, airy silhouette perfect for bedrooms, living rooms, and study areas.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair9.webp', '../pics/products/dining-room/chair9-alt.webp', '../pics/products/dining-room/chair9-alt-2.webp'],
+      name: 'Cane Charm Armchair',
+      fullname: 'Cane Charm Armchair – Plastic Frame with Woven Cane‑Style Seat & Back (Black, White, Green)',
+      category: 'dining-chairs',
+      price: {
+        original: 18500,
+        discounted: 12500
+      },
+      description: 'The Cane Charm Arm Chair is an elegant seating solution that masterfully blends natural materials with refined comfort. Featuring intricately woven cane paneling on the backrest and sides, complemented by sturdy wooden armrests, this chair brings organic warmth and sophisticated style to living rooms, dens, and bedrooms.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair10.webp', '../pics/products/dining-room/chair10-alt.webp', '../pics/products/dining-room/chair10-alt-2.webp'],
+      name: 'Lean Chair Outdoor',
+      fullname: 'Lean Chair Outdoor',
+      category: 'dining-chairs',
+      price: {
+        original: 33500,
+        discounted: 23500
+      },
+      description: 'The Lean Chair Outdoor is a contemporary seating piece designed for relaxation and sophisticated outdoor living. Featuring a sleek, minimalist profile with clean lines and a reclined backrest, this chair invites you to unwind on patios, balconies, and gardens while maintaining an elegant aesthetic that complements modern outdoor spaces.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair11.webp', '../pics/products/dining-room/chair11-alt.webp', '../pics/products/dining-room/chair11-alt-2.webp'],
+      name: 'Royal Chair MC-117',
+      fullname: 'Royal Chair MC-117',
+      category: 'dining-chairs',
+      price: {
+        original: 41500,
+        discounted: 22000
+      },
+      description: 'The Royal Chair MC-117 is a sophisticated dining chair that combines timeless elegance with modern comfort. Its refined design and premium materials make it a standout piece in any dining room setting.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/chair12.webp', '../pics/products/dining-room/chair12-alt.webp', '../pics/products/dining-room/chair12-alt-2.webp'],
+      name: 'Imperial Brown Chair',
+      fullname: 'Imperial Brown Chair',
+      category: 'dining-chairs',
+      price: {
+        original: 47500,
+        discounted: 35000
+      },
+      description: 'The Imperial Brown Chair is a luxurious dining chair that combines rich, warm tones with premium craftsmanship. Its sturdy construction and elegant design make it a perfect addition to any sophisticated dining room.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery1.webp', '../pics/products/dining-room/crockery1-alt.webp', '../pics/products/dining-room/crockery1-alt-2.webp'],
+      name: 'ROY Side Board',
+      fullname: 'ROY Side Board',
+      category: 'crockery',
+      price: {
+        original: 95000,
+        discounted: 75000
+      },
+      description: 'The ROY Side Board is a stylish and functional piece of furniture designed to complement any dining room or living space. Its elegant design and durable construction make it a perfect addition to any home.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery2.webp', '../pics/products/dining-room/crockery2-alt.webp', '../pics/products/dining-room/crockery2-alt-2.webp'],
+      name: 'Bold Printed Storage Console (Rung)',
+      fullname: 'Bold Printed Storage Console (Rung)',
+      category: 'crockery',
+      price: {
+        original: 210000,
+        discounted: 133000
+      },
+      description: 'The Bold Printed Storage Console (Rung) is a striking accent piece that melds functionality with graphic flair. Its clean-lined frame supports a series of open shelves and enclosed compartments, each sporting a vibrant, geometric print that adds personality to any hallway, living room, or entryway.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery3.webp', '../pics/products/dining-room/crockery3-alt.webp', '../pics/products/dining-room/crockery3-alt-2.webp'],
+      name: 'Blair Side Board',
+      fullname: 'Blair Side Board',
+      category: 'crockery',
+      price: {
+        original: 40000,
+        discounted: 25000
+      },
+      description: 'The Blair Side Board is a stylish and functional piece of furniture designed to complement any dining room or living space. Its elegant design and durable construction make it a perfect addition to any home.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery4.webp', '../pics/products/dining-room/crockery4-alt.webp', '../pics/products/dining-room/crockery4-alt-2.webp'],
+      name: 'Edward Side Board (Edward Series)',
+      fullname: 'Edward Side Board (Edward Series)',
+      category: 'crockery',
+      price: {
+        original: 188000,
+        discounted: 133000
+      },
+      description: 'The Edward Side Board from the Edward Series is a refined storage piece that combines traditional craftsmanship with clean, modern lines. It features a spacious top surface, multiple drawers, and cabinet doors—perfect for stashing linens, dishes, or media components—while its rich wood finish and subtle hardware lend a timeless, elegant look.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery5.webp', '../pics/products/dining-room/crockery5-alt.webp', '../pics/products/dining-room/crockery5-alt-2.webp'],
+      name: 'Printed Storage Console (Rung)',
+      fullname: 'Printed Storage Console (Rung)',
+      category: 'crockery',
+      price: {
+        original: 188000,
+        discounted: 133000
+      },
+      description: 'The Printed Storage Console (Rung) is a striking accent piece that melds functionality with graphic flair. Its clean-lined frame supports a series of open shelves and enclosed compartments, each sporting a vibrant, geometric print that adds personality to any hallway, living room, or entryway.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery6.webp', '../pics/products/dining-room/crockery6-alt.webp', '../pics/products/dining-room/crockery6-alt-2.webp'],
+      name: 'Gravil Crockery Unit',
+      fullname: 'Gravil Crockery Unit',
+      category: 'crockery',
+      price: {
+        original: 77000,
+        discounted: 50000
+      },
+      description: 'The Gravil Crockery Unit is a stylish and functional piece of furniture designed to complement any dining room or living space. Its elegant design and durable construction make it a perfect addition to any home.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery7.webp', '../pics/products/dining-room/crockery7-alt.webp', '../pics/products/dining-room/crockery7-alt-2.webp'],
+      name: 'Serenity Chest of Drawers (Organic)',
+      fullname: 'Serenity Chest of Drawers (Organic)',
+      category: 'crockery',
+      price: {
+        original: 115000,
+        discounted: 50000
+      },
+      description: 'The Serenity Chest of Drawers (Organic) is a calming storage solution crafted with natural materials and soft, flowing lines. Its organic-inspired silhouette features multiple drawers with gentle curves and subtle, nature‑toned finishes, offering ample space for clothing, linens, or personal items while maintaining a serene, spa‑like presence in the bedroom.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery8.webp', '../pics/products/dining-room/crockery8-alt.webp', '../pics/products/dining-room/crockery8-alt-2.webp'],
+      name: 'Nature\'s Weave Console (Organic)',
+      fullname: 'Nature\'s Weave Console (Organic)',
+      category: 'crockery',
+      price: {
+        original: 158000,
+        discounted: 118000
+      },
+      description: 'The Nature’s Weave Console (Organic) brings the beauty of natural textures into your home with a handcrafted, woven-front design. Its slim profile and organic materials—think rattan or seagrass panels set within a warm wooden frame—make it an ideal accent for entryways, living rooms, or hallways.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery9.webp', '../pics/products/dining-room/crockery9-alt.webp', '../pics/products/dining-room/crockery9-alt-2.webp'],
+      name: 'Serenity Separator (Organic)',
+      fullname: 'Serenity Separator (Organic)',
+      category: 'crockery',
+      price: {
+        original: 132000,
+        discounted: 88000
+      },
+      description: 'A graceful room‑dividing element, the Serenity Separator (Organic) offers gentle privacy while keeping spaces light and airy. Crafted from natural materials like bamboo, woven rattan, or light wood, its panel design features soft curves and an earthy finish that echoes nature’s tranquillity.'
+    },
+    {
+      imgSrc: ['../pics/products/dining-room/crockery10.webp', '../pics/products/dining-room/crockery10-alt.webp', '../pics/products/dining-room/crockery10-alt-2.webp'],
+      name: 'Timberland Shelf',
+      fullname: 'Timberland Shelf',
+      category: 'crockery',
+      price: {
+        original: 188000,
+        discounted: 145000
+      },
+      description: 'A rustic‑inspired shelving unit, the Timberland Shelf showcases the rich character of solid wood with a rugged, natural finish. Strong and spacious, its open tiers provide ample room for books, décor, or storage baskets, making it a functional centerpiece in living rooms, studies, or entryways.'
+    },
+    // dining room finished
+    
   ];
 
   products.forEach(function (item) {
@@ -698,27 +1046,28 @@ $(document).ready(function () {
   function createId(item) {
     item.id = crypto.randomUUID();
   }
+
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
   const image = $('.card img');
-
   image.on('mouseenter', function (event) {
     const cardId = event.target.parentElement.id;
     products.forEach(function (product) {
       if (cardId == product.id && product.imgSrc[1]) {
-        event.target.src = product.imgSrc[1]
+        event.target.src = product.imgSrc[1];
       }
     });
-
   });
   image.on('mouseleave', function (event) {
     const cardId = event.target.parentElement.id;
     products.forEach(function (product) {
       if (cardId == product.id) {
-        event.target.src = product.imgSrc[0]
+        event.target.src = product.imgSrc[0];
       }
     });
   });
+
+
 
   image.on('click', function (event) {
     const cardId = event.target.parentElement.id;
@@ -848,10 +1197,10 @@ $(document).ready(function () {
     <div class="row flex-nowrap align-items-center border-bottom py-3 m-0" id="${item.id}">
 
   <div class="col-3 text-center">
-    <img src="${item.imgSrc}" class="img-fluid w-75" alt="image not found">
+    <img src="${item.imgSrc}" class="img-fluid w-100" alt="image not found">
   </div>
 
-  <div class="col-3 text-truncate">
+  <div class="col-3 text-center">
     <h6 class="mb-0" style="font-size:13px;">${item.name}</h6>
   </div>
 
