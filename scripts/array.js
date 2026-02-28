@@ -979,7 +979,7 @@ $(document).ready(function () {
       description: 'A rustic‑inspired shelving unit, the Timberland Shelf showcases the rich character of solid wood with a rugged, natural finish. Strong and spacious, its open tiers provide ample room for books, décor, or storage baskets, making it a functional centerpiece in living rooms, studies, or entryways.'
     },
     // dining room finished
-    
+
   ];
 
   products.forEach(function (item) {
@@ -1192,6 +1192,9 @@ $(document).ready(function () {
 
   let cartItemCount = 0;
   let cartItemQuantity = 1;
+  if (cart.length == 0) {
+    $('#order').html('<p class="text-center fs-2 text-muted pt-5">Your cart is empty</p>');
+  }
   cart.forEach(function (item) {
     let cartItem = `
     <div class="row flex-nowrap align-items-center border-bottom py-3 m-0" id="${item.id}">
@@ -1229,9 +1232,12 @@ $(document).ready(function () {
         if (index > -1) {
           cart.splice(index, 1);
         }
+
         card.remove();
         localStorage.setItem('cart', JSON.stringify(cart));
-
+        if (cart.length == 0) {
+          $('#order').html('<p class="text-center fs-2 text-muted pt-5">Your cart is empty</p>');
+        }
       }
 
       item_count();
