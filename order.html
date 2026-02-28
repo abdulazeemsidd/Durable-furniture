@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="respo.css" />
 </head>
+
 <body>
   <header>
 
@@ -110,8 +112,10 @@
           <li><a class="dropdown-item fs-6" href="office-room/office-room-chairs.html">Office Chairs</a></li>
           <li><a class="dropdown-item fs-6" href="office-room/office-room-workstation.html">Office Workstation</a></li>
           <li><a class="dropdown-item fs-6" href="office-room/office-room-credenza.html">Office Credenza</a></li>
-          <li><a class="dropdown-item fs-6" href="office-room/office-room-reception.html">Office Reception & Manager Desk</a></li>
-          <li><a class="dropdown-item fs-6" href="office-room/office-room-meeting.html">Office Executive & Meeting Tables</a></li>
+          <li><a class="dropdown-item fs-6" href="office-room/office-room-reception.html">Office Reception & Manager
+              Desk</a></li>
+          <li><a class="dropdown-item fs-6" href="office-room/office-room-meeting.html">Office Executive & Meeting
+              Tables</a></li>
         </ul>
       </div>
       <a class="hover" href="#">About us</a>
@@ -124,18 +128,45 @@
   </header>
 
   <main>
-    
+    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="cartCanvas" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body cart-modal-body d-flex flex-column p-0">
+
+        <div class="flex-grow-1 overflow-auto">
+          <div class="row text-center fw-bold border-bottom py-2 m-0">
+            <div class="col-3 col-md-3">Product</div>
+            <div class="col-3 col-md-3">Title</div>
+            <div class="col-2 col-md-3">Qty</div>
+            <div class="col-3 col-md-2">Price</div>
+            <div class="col-1 col-md-1"></div>
+          </div>
+          <div id="order" class="m-0"></div>
+        </div>
+        <div class="border-top p-2">
+          <a id="order_btn" class="text-center text-white w-100 bg-dark p-2 fw-bold d-block text-decoration-none"
+            style="letter-spacing:1.2px; font-size:20px;" href="../order.html">
+            Order Now
+          </a>
+        </div>
+
+      </div>
+    </div>
     <h1 class="text-center text-success mt-5">Your Order Has Been Placed Successfully! 👍</h1>
   </main>
-
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="bootstrap file/bootstrap.bundle.min.js"></script>
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+    const hamburger = $('#hamburger');
+    const navLinks = $('#nav-links');
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    })
+    hamburger.click(() => {
+      navLinks.toggleClass('active');
+    });
   </script>
-  
+
 </body>
+
 </html>

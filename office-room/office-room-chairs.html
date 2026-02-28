@@ -43,13 +43,13 @@
 
 
 
-      <div class="cart-icon" data-bs-toggle="modal" data-bs-target="#cart-backdrop"><svg
+      <div class="cart-icon" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" aria-controls="offcanvasRight"><svg
           xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFF">
           <path
             d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
         </svg>
         <div>Shop Now</div>
-        <span class="count">0</span>
+        <span class="count" id="cart_item_count">0</span>
       </div>
 
       <div class="acc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFF">
@@ -67,10 +67,10 @@
       <div class="d-inline dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover mx-2" href="#"> Bedroom </a> </button>
+          <a class="hover " href="#"> Bedroom </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item  fs-6  " href="../bedroom/bedroom.html">Bedset</a></li>
-          <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-tables.html">Bedroom Tables</a></li>
+          <li><a class="dropdown-item  fs-6" href="../bedroom/">Bedroom Tables</a></li>
           <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-wardrobes.html">Wardrobes</a></li>
           <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-beds.html">Beds</a></li>
           <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-dressers.html">Dressers & Chesters</a></li>
@@ -80,7 +80,7 @@
       <div class="ms-1 d-inline dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover mx-2" href="#">Living Room </a> </button>
+          <a class="hover" href="#">Living Room </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item fs-6" href="../living-room/living-room.html">Living Room</a></li>
           <li><a class="dropdown-item fs-6" href="../living-room/living-room-tables.html">Coffee Tables</a></li>
@@ -94,7 +94,7 @@
       <div class="ms-1 d-inline dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover mx-2" href="#">Dining Room </a> </button>
+          <a class="hover " href="#">Dining Room </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item fs-6" href="../dining-room/dining-room.html">Dining Room</a></li>
           <li><a class="dropdown-item fs-6" href="../dining-room/dining-room-tables.html">Dining Tables</a></li>
@@ -103,10 +103,10 @@
               Sideboards</a></li>
         </ul>
       </div>
-      <div class="ms-1 d-inline dropdown">
+      <div class="ms-1 dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover mx-2" href="#">Office Room </a> </button>
+          <a class="hover " href="#">Office Room </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item fs-6" href="office-room.html">Office Room</a></li>
           <li><a class="dropdown-item fs-6" href="office-room-chairs.html">Office Chairs</a></li>
@@ -125,6 +125,48 @@
 
   </header>
   <main>
+     <h1 class="text-secondary mt-4 ms-5 text-center" id="not_find_anything"></h1>
+    <div class="container">
+      <div class="modal fade" id="product-backdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body product-modal-body">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="cartCanvas" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body cart-modal-body d-flex flex-column p-0">
+
+          <div class="flex-grow-1 overflow-auto">
+            <div class="row text-center fw-bold border-bottom py-2 m-0">
+              <div class="col-3 col-md-3">Product</div>
+              <div class="col-3 col-md-3">Title</div>
+              <div class="col-2 col-md-3">Qty</div>
+              <div class="col-3 col-md-2">Price</div>
+              <div class="col-1 col-md-1"></div>
+            </div>
+            <div id="order" class="m-0"></div>
+          </div>
+          <div class="border-top p-2">
+            <a id="order_btn" class="text-center text-white w-100 bg-dark p-2 fw-bold d-block text-decoration-none"
+              style="letter-spacing:1.2px; font-size:20px;" href="../order.html">
+              Order Now
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row office-room-chairs"></div>
+    </div>
   </main>
   <script src="../bootstrap file/bootstrap.bundle.min.js"></script>
   <script src="../scripts/jquery-3.7.1.min.js"></script>

@@ -1,23 +1,34 @@
 $(document).ready(function () {
-
   let bedroomContainer = $('.bedroom');
-  let wardrobeContainer = $('.bedroom-wardrobes');
-  let tablesContainer = $('.bedroom-tables');
-  let chairsContainer = $('.bedroom-chairs');
-  let dressersContainer = $('.bedroom-dressers');
-  let bedsContainer = $('.bedroom-beds');
+  let bedroomWardrobeContainer = $('.bedroom-wardrobes');
+  let bedroomTablesContainer = $('.bedroom-tables');
+  let bedroomChairsContainer = $('.bedroom-chairs');
+  let bedroomDressersContainer = $('.bedroom-dressers');
+  let bedroomBedsContainer = $('.bedroom-beds');
 
-  const hamburger = document.querySelector('#hamburger');
-  const navLinks = document.querySelector('#nav-links');
+  let diningRoom = $('.dining-room');
+  let diningRoomTables = $('.dining-room-tables');
+  let diningRoomCrockery = $('.dining-room-crockery');
+  let diningRoomChairs = $('.dining-room-chairs');
 
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+  let officeRoom = $('.office-room');
+  let officeRoomMeeting = $('.office-room-meeting');
+  let officeRoomWorkstation = $('.office-room-workstation');
+  let officeRoomReception = $('.office-room-reception');
+  let officeRoomCredenza = $('.office-room-credenza');
+  let officeRoomChairs = $('.office-room-chairs')
+
+  const hamburger = $('#hamburger');
+  const navLinks = $('#nav-links');
+
+  hamburger.click(() => {
+    navLinks.toggleClass('active');
   });
 
 
-  let bedroom = [
+  let products = [
     {
-      imgSrc: ['../../pics/products/bedroom/wardrobe2.webp', '../pics/products/bedroom/wardrobe2-alt.webp'],
+      imgSrc: ['../pics/products/bedroom/wardrobe2.webp', '../pics/products/bedroom/wardrobe2-alt.webp'],
       name: 'Savior 2 Door Wardrobe',
       fullname: 'Savior 2 Door Wardrobe - Special Offer',
       category: 'wardrobe',
@@ -258,7 +269,6 @@ $(document).ready(function () {
       },
       description: 'The Marigold Side Table is a modern, compact bedside storage piece with a soft marigold yellow finish. It adds a bright, cheerful touch to bedrooms while keeping essentials neatly stored and easily accessible.'
     },
-
     {
       imgSrc: ['../pics/products/bedroom/mirror1.webp', '../pics/products/bedroom/mirror1-alt.webp'],
       name: 'Simple Mirror',
@@ -391,7 +401,6 @@ $(document).ready(function () {
       },
       description: 'The RIA Wall Mirror features a graceful full-length arch design that adds elegance and depth to any room. Framed in warm wood, it blends modern style with natural charm, making it a perfect statement piece for bedrooms, hallways, or dressing areas.'
     },
-
     {
       imgSrc: ['../pics/products/bedroom/bed1.webp', '../pics/products/bedroom/bed1-alt.webp', '../pics/products/bedroom/bed1-alt-2.webp'],
       name: 'Plato King Sized Bed',
@@ -524,7 +533,6 @@ $(document).ready(function () {
       },
       description: 'The Sausalito Cane Bed brings natural texture and relaxed elegance to your bedroom. With its stylish cane detailing and smooth finish, this bed combines timeless charm with contemporary design — perfect for creating a warm, inviting atmosphere.'
     },
-
     {
       imgSrc: ['../pics/products/bedroom/sofa1.webp', '../pics/products/bedroom/sofa1-alt.webp', '../pics/products/bedroom/sofa1-alt-2.webp'],
       name: 'Billy 2 Seater Sofa',
@@ -613,56 +621,112 @@ $(document).ready(function () {
       },
       description: 'A modern bedroom chair set featuring sleek designs and a coordinating table for added style and utility. Ideal for lounging, reading, or casual conversations, it enhances comfort and complements your bedroom decor.'
     },
+    {
+      imgSrc: ['../pics/products/dining-room/table1.webp', '../pics/products/dining-room/table1-alt.webp', '../pics/products/dining-room/table1-alt-2.webp'],
+      name: 'Shane Dining Table',
+      fullname: 'Shane Dining Table with 4 ease chairs',
+      category: 'dining-table',
+      price: {
+        original: 81000,
+        discounted: 49000
+      },
+      description: 'Shane Dining Table with 4 Ease Chairs is a modern and functional 4-seater set designed for comfortable everyday dining and small gatherings, combining durability with a sleek, elegant finish. Its compact design, sturdy construction, and comfortable seating make it a perfect addition to any contemporary dining space.'
+    },
   ];
 
-  bedroom.forEach(function (item) {
+  products.forEach(function (item) {
     createId(item)
-    generateHtml(item, bedroomContainer);
     if (item.category == 'bed') {
-      generateHtml(item, bedsContainer);
+      generateHtml(item, bedroomBedsContainer);
+      generateHtml(item, bedroomContainer);
     } else if (item.category == 'bedroom-chair') {
-      generateHtml(item, chairsContainer);
+      generateHtml(item, bedroomChairsContainer);
+      generateHtml(item, bedroomContainer);
     } else if (item.category == 'wardrobe') {
-      generateHtml(item, wardrobeContainer);
+      generateHtml(item, bedroomWardrobeContainer);
+      generateHtml(item, bedroomContainer);
     } else if (item.category == 'dresser') {
-      generateHtml(item, dressersContainer);
-    } else {
-      generateHtml(item, tablesContainer)
+      generateHtml(item, bedroomDressersContainer);
+      generateHtml(item, bedroomContainer);
+    } else if (item.category == 'table') {
+      generateHtml(item, bedroomTablesContainer);
+      generateHtml(item, bedroomContainer);
+
+    } else if (item.category == 'dining-table') {
+      generateHtml(item, diningRoomTables);
+      generateHtml(item, diningRoom);
+    } else if (item.category == 'crockery') {
+      generateHtml(item, diningRoomCrockery);
+      generateHtml(item, diningRoom);
+    } else if (item.category == 'dining-chairs') {
+      generateHtml(item, diningRoomChairs);
+      generateHtml(item, diningRoom);
+
+    } else if (item.category == 'consoles') {
+      generateHtml(item, livingRoomConsoles);
+      generateHtml(item, livingRoom);
+    } else if (item.category == 'living-room-chairs') {
+      generateHtml(item, livingRoomChairs);
+      generateHtml(item, livingRoom);
+    } else if (item.category == 'ottomans') {
+      generateHtml(item, livingRoomOttomans);
+      generateHtml(item, livingRoom);
+    } else if (item.category == 'shoe-racks') {
+      generateHtml(item, livingRoomShoeRacks);
+      generateHtml(item, livingRoom);
+    } else if (item.category == 'living-room-tables') {
+      generateHtml(item, livingRoomTables);
+      generateHtml(item, livingRoom);
+
+    } else if (item.category == 'office-chairs') {
+      generateHtml(item, officeRoomChairs);
+      generateHtml(item, officeRoom);
+    } else if (item.category == 'office-credenza') {
+      generateHtml(item, officeRoomCredenza);
+      generateHtml(item, officeRoom);
+    } else if (item.category == 'office-meeting') {
+      generateHtml(item, officeRoomMeeting);
+      generateHtml(item, officeRoom);
+    } else if (item.category == 'office-reception') {
+      generateHtml(item, officeRoomReception);
+      generateHtml(item, officeRoom);
+    } else if (item.category == 'office-workstation') {
+      generateHtml(item, officeRoomWorkstation);
+      generateHtml(item, officeRoom);
     }
   });
   function createId(item) {
     item.id = crypto.randomUUID();
   }
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
   const image = $('.card img');
 
   image.on('mouseenter', function (event) {
-    const img = event.target;
-    bedroom.forEach(function (product) {
-      if (img.id == product.id && product.imgSrc[1]) {
-        img.src = product.imgSrc[1]
+    const cardId = event.target.parentElement.id;
+    products.forEach(function (product) {
+      if (cardId == product.id && product.imgSrc[1]) {
+        event.target.src = product.imgSrc[1]
       }
-    })
+    });
 
-  })
+  });
   image.on('mouseleave', function (event) {
-    const img = event.target;
-    bedroom.forEach(function (product) {
-      if (img.id == product.id) {
-        img.src = product.imgSrc[0]
+    const cardId = event.target.parentElement.id;
+    products.forEach(function (product) {
+      if (cardId == product.id) {
+        event.target.src = product.imgSrc[0]
       }
     });
   });
 
   image.on('click', function (event) {
-    const img = event.target;
-
-
-    bedroom.forEach(function (item) {
-      if (img.id == item.id) {
+    const cardId = event.target.parentElement.id;
+    products.forEach(function (item) {
+      if (cardId == item.id) {
         const price = item.price.discounted;
         let quantity = 1;
-        $('.modal-body').html(`
+        $('.product-modal-body').html(`
       <div class="row">
               <div class="col-md-6">
                 <img src="${item.imgSrc[0]}" width="100%" class="main-display-image" alt="image not found">
@@ -688,7 +752,7 @@ $(document).ready(function () {
                   </div>
                   <p class="sub-total fs-4">Subtotal: <span class="text-success fs-4">Rs. ${quantity * price}</span></p>
                   <a class="btn btn-outline-dark px-5 py-3 mt-2 rounded-pill order-now" href="../order.html">Buy Now</a>
-                  <a class="btn btn-outline-dark px-5 py-3 mt-2 rounded-pill" href="#">Add To Cart</a>
+                  <a class="btn btn-outline-dark px-5 py-3 mt-2 rounded-pill add_to_cart" href="#">Add To Cart</a>
                 </div>
               </div>
             </div>
@@ -719,13 +783,28 @@ $(document).ready(function () {
         $('.display-image').on('click', function (event) {
           const imageSource = event.target.src;
           $('.main-display-image')[0].src = imageSource;
-        })
+        });
+        $('.add_to_cart').click(function () {
+          cartItemCount++;
+          cartItemQuantity = quantity;
+          let imgSrc = item.imgSrc[0];
+          let title = item.name;
+          let price = item.price.discounted;
+          let id = item.id;
+          cart.push({
+            imgSrc,
+            name: title,
+            price: price * quantity,
+            quantity,
+            id
+          });
 
-
-
+          localStorage.setItem('cart', JSON.stringify(cart));
+          location.reload();
+        });
       }
-    })
-  })
+    });
+  });
 
   const searchButton = $('.search-button');
   const cardTitle = $('.card-title');
@@ -736,7 +815,7 @@ $(document).ready(function () {
       let cardBody = cardTitle[i].parentElement
       let card = cardBody.parentElement;
 
-      if (cardTitle[i].innerText.toUpperCase().indexOf($('#search').val().toUpperCase()) > -1 && $("#search").val()) {
+      if (cardTitle[i].innerText.toUpperCase().indexOf($('#search').val().toUpperCase()) > -1) {
         card.style.display = 'flex';
         checker++;
       } else {
@@ -746,22 +825,115 @@ $(document).ready(function () {
       if (checker > 0) {
         $('#not_find_anything').text("");
       } else {
-        $('#not_find_anything').text("Product not Found");
+        $('#not_find_anything').html("Product not Found");
       }
     }
 
   });
 
+  $('#search').on('input', function () {
+    for (let i = 0; i < cardTitle.length; i++) {
+      let cardBody = cardTitle[i].parentElement
+      let card = cardBody.parentElement;
+      if ($('#search').val() == "") {
+        card.style.display = 'flex';
+      }
+    }
+  });
+
+  let cartItemCount = 0;
+  let cartItemQuantity = 1;
+  cart.forEach(function (item) {
+    let cartItem = `
+    <div class="row flex-nowrap align-items-center border-bottom py-3 m-0" id="${item.id}">
+
+  <div class="col-3 text-center">
+    <img src="${item.imgSrc}" class="img-fluid w-75" alt="image not found">
+  </div>
+
+  <div class="col-3 text-truncate">
+    <h6 class="mb-0" style="font-size:13px;">${item.name}</h6>
+  </div>
+
+  <div class="col-2 text-center">
+    ${item.quantity}
+  </div>
+
+  <div class="col-3 text-center">
+    <h6 class="mb-0">
+      <span class="cart_item_price">Rs. ${item.price}</span>
+    </h6>
+  </div>
+
+  <div class="col-1">
+    <span class="close" style="cursor:pointer; font-size:25px;">&times;</span>
+  </div>
+
+</div>
+    `;
+    $('#order').append(cartItem);
+    $("#cart_item_count").text(cartItemCount);
+    $(".close").click(function (event) {
+      const card = event.target.parentElement.parentElement;
+      if (card.id == item.id) {
+        const index = cart.indexOf(item);
+        if (index > -1) {
+          cart.splice(index, 1);
+        }
+        card.remove();
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+      }
+
+      item_count();
+    });
+
+    item_count();
+
+  });
+  $('.add-to-cart').click(function (event) {
+    cartItemCount++;
+    let cardId = event.target.parentElement.id;
+    products.forEach(function (item) {
+      if (cardId == item.id) {
+        let imgSrc = item.imgSrc[0];
+        let title = item.name;
+        let price = item.price.discounted;
+        let quantity = cartItemQuantity;
+        let id = item.id;
+        cart.push({
+          imgSrc,
+          name: title,
+          price,
+          quantity,
+          id
+        });
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+      }
+      location.reload();
+    });
+
+  });
+  function item_count() {
+    let res = cart.length;
+    $("#cart_item_count").text(res);
+  }
+
+  $('#order_btn').click(function () {
+    localStorage.removeItem('cart');
+  })
+
 
   function generateHtml(item, container) {
     container.append(`
-        <div class="card col-md-3 me-3 mb-3" style="width: 18rem;">
-          <img src="${item.imgSrc[0]}" class="card-img-top position-relative" data-bs-toggle="modal" data-bs-target="#product-backdrop" id=${item.id} height="200px" alt="...">
+        <div class="card col-md-3 me-3 mb-3" id=${item.id} style="width: 18rem;">
+          <img src="${item.imgSrc[0]}" class="card-img-top position-relative" data-bs-toggle="modal" data-bs-target="#product-backdrop" height="200px" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text"><del class="text-secondary">Rs. ${item.price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item.price.discounted}</span></p>
           </div>
-          <a href="#" class="btn btn-outline-dark py-2 mb-3">Add to cart</a>
+          <a href="#" class="btn btn-outline-dark py-2 mb-3 add-to-cart">Add to cart</a>
         </div>
         `
     );

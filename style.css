@@ -27,8 +27,8 @@
 /* for logo style  */
 .logo {
     background-image: url(pics/logo.webp);
-    width: 20vmax;
-    height: 7.3vmax;
+    width: 13vmax;
+    height: 4.8vmax;
     background-size: cover;
 
 
@@ -93,18 +93,18 @@
     
 }
 .cart-icon svg {
-    width: 3vmax;
+    width: 2.2vmax;
     
 }
 
 .cart-icon div {
     color: white;
-    font-size: 1vmax;
+    font-size: .8vmax;
     
 }
 
 .count {
-    font-size: 1vmax;
+    font-size: 0.8vmax;
     color: white;
     font-weight: 500;
     background-color: rgb(159, 147, 147);
@@ -113,27 +113,28 @@
     text-align: center;
     border-radius: 50%;
     position: absolute;
-    top: -5px;
-    right: 20px;
+    top: -8px;
+    right: 12px;
     opacity: 85%;
 
 }
 
 .acc-icon svg{
-    width: 3vmax;
+    width: 2.2vmax;
 }
 
 .acc-icon div {
     color: white;
-    font-size: 1vmax;
+    font-size: .8vmax;
 }
-
-
 
 
 
 /* lower header start's here  */
 .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-image: linear-gradient(to right, #b66027, #b66027, #773509, #502508);
     text-align: center;
     padding: 10px 0;
@@ -147,10 +148,9 @@
     display: inline;
     text-decoration: none;
     color: white;
-    margin-left: 50px;
-    margin-right: 20px; 
+   
     font-weight: 500;
-    font-size: 1.5vmax;
+    font-size: 1vmax;
     align-items: center;
     position: relative;
     transform: all 0.3 ease;
@@ -185,10 +185,12 @@
     font-weight: 200;
     margin: 0;
     
-    font-size: 1vmax;
+    font-size: 1.2vmax;
     color: white;
 
 }
+
+
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -200,6 +202,10 @@
 
 }
 
+.dropdown-toggle::after{
+    display: none;
+}
+
 
 /* main section start  */
 
@@ -208,6 +214,14 @@
 
 
 }
+
+.card{
+    transition: all 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
 
 .card-img-top{
     cursor: pointer;
@@ -224,3 +238,9 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+ .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
