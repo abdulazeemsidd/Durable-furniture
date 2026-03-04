@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bedroom Chairs</title>
   <link rel="stylesheet" href="../bootstrap file/bootstrap.min.css">
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../respo.css" />
 </head>
 
 <body>
-  <header>
+ <header>
 
     <nav class="navbar">
       <span class="hamburger" id="hamburger"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
@@ -19,18 +19,38 @@
           <path d="M120-680v-80h720v80H120Zm0 480v-80h720v80H120Zm0-240v-80h720v80H120Z" />
         </svg></span>
       <div class="logo"></div>
-
+        
 
       <div class="search-bar d-flex">
         <select name="categories" onchange="window.location.href=this.value;" id="" class="categories">
-          <option href="#" value="All Categories">All Categories</option>
-          <option value="bedroom.html"> Bedroom </option>
-          <option value="bedroom.html"> Bed Set </option>
-          <option value="bedroom-beds.html"> Bed </option>
-          <option value="bedroom-chairs.html"> Bedroom Chair </option>
-          <option value="bedroom-tables.html"> Bedroom Table </option>
-          <option value="bedroom-dressers.html"> Dressing Table </option>
-          <option value=""></option>
+          <option value="All Categories">All Categories</option>
+          <option value="../bedroom/bedroom.html"> Bedroom </option>
+          <option value="../bedroom/bedroom.html"> Bed Set </option>
+          <option value="../bedroom/bedroom-beds.html"> Bed </option>
+          <option value="../bedroom/bedroom-chairs.html"> Bedroom Chair </option>
+          <option value="../bedroom/bedroom-tables.html"> Bedroom Table </option>
+          <option value="../bedroom/bedroom-dressers.html"> Dressing Table </option>
+<option value=""></option>
+          <option value="../living-room/living-room.html">Living room</option>
+          <option value="../living-room/living-room-sofas.html">Living Room Sofas</option>
+          <option value="../living-room/living-room-shoe-racks.html">Living room Shoe-Racks</option>
+          <option value="../living-room/living-room-ottomans.html">Living room Ottomans</option>
+          <option value="../living-room/living-room-entertainment.html">Living room Entertainment</option>
+          <option value="../living-room/living-room-consoles.html">Living room Console</option>
+<option value=""></option>
+          <option value="../dining-room/dining-room.html">Dining Room</option>
+          <option value="../dining-room/dining-room-tables.html">Dining Room Tables</option>
+          <option value="../dining-room/dining-room-crockery.html">Dining Room Crockery</option>
+          <option value="../dining-room/dining-room-chairs.html">Dining Room Chairs</option>
+<option value=""></option>
+          <option value="../office-room/office-room.html">Office Room</option>
+          <option value="../office-room/office-room-meeting.html">Office Room Meating</option>
+          <option value="../office-room/office-room-reception.html">Office Room Reseption</option>
+          <option value="../office-room/office-room-workstation.html">Office Room Workstation</option>
+          <option value="../office-room/office-room-credenza.html">Office Room Credenza</option>
+          <option value="../office-room/office-room-chairs.html">Office Room Chair</option>
+          
+          
         </select>
         <input class="form-control" id="search" type="search" placeholder="Find Something" aria-label="Search" />
         <button class="search-button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
@@ -52,7 +72,7 @@
         <span class="count" id="cart_item_count">0</span>
       </div>
 
-      <div class="acc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFF">
+      <div class="acc-icon" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#FFFF">
           <path
             d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z" />
         </svg>
@@ -67,34 +87,33 @@
       <div class="d-inline dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover " href="#"> Bedroom </a> </button>
+          <a class="hover mx-2" href="#"> Bedroom </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item  fs-6  " href="bedroom.html">Bedset</a></li>
-          <li><a class="dropdown-item  fs-6" href="bedroom-tables.html">Bedroom Tables</a></li>
-          <li><a class="dropdown-item  fs-6" href="bedroom-wardrobes.html">Wardrobes</a></li>
-          <li><a class="dropdown-item  fs-6" href="bedroom-beds.html">Beds</a></li>
-          <li><a class="dropdown-item  fs-6" href="bedroom-dressers.html">Dressers & Chesters</a></li>
-          <li><a class="dropdown-item  fs-6" href="bedroom-chairs.html">Bedroom Chairs</a></li>
+          <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom.html">Bedset</a></li>
+          <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-tables.html">Bedroom Tables</a></li>
+          <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-wardrobes.html">Wardrobes</a></li>
+          <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-beds.html">Beds</a></li>
+          <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-dressers.html">Dressers & Chesters</a></li>
+          <li><a class="dropdown-item  fs-6" href="../bedroom/bedroom-chairs.html">Bedroom Chairs</a></li>
         </ul>
       </div>
       <div class="ms-1 d-inline dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover" href="#">Living Room </a> </button>
+          <a class="hover mx-2" href="#">Living Room </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item fs-6" href="../living-room/living-room.html">Living Room</a></li>
-          <li><a class="dropdown-item fs-6" href="../living-room/living-room-tables.html">Coffee Tables</a></li>
+          <li><a class="dropdown-item fs-6" href="../living-room/living-room-sofas.html">Living Room Sofas</a></li>
           <li><a class="dropdown-item fs-6" href="../living-room/living-room-shoe-racks.html">Shoe Racks</a></li>
           <li><a class="dropdown-item fs-6" href="../living-room/living-room-ottomans.html">Benches & Ottomans</a></li>
-          <li><a class="dropdown-item fs-6" href="../living-room/living-room-entertainment.html">Entertainment Units</a>
-          </li>
+          <li><a class="dropdown-item fs-6" href="../living-room/living-room-entertainment.html">Entertainment Units</a></li>
           <li><a class="dropdown-item fs-6" href="../living-room/living-room-consoles.html">Mirror & Consoles</a></li>
         </ul>
       </div>
       <div class="ms-1 d-inline dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover " href="#">Dining Room </a> </button>
+          <a class="hover mx-2" href="#">Dining Room </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item fs-6" href="../dining-room/dining-room.html">Dining Room</a></li>
           <li><a class="dropdown-item fs-6" href="../dining-room/dining-room-tables.html">Dining Tables</a></li>
@@ -103,21 +122,23 @@
               Sideboards</a></li>
         </ul>
       </div>
-      <div class="ms-1 dropdown">
+      <div class="ms-1 d-inline dropdown">
         <button class="btn px-0 mx-0 text-white  
         dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <a class="hover " href="#">Office Room </a> </button>
+          <a class="hover mx-2" href="#">Office Room </a> </button>
         <ul class="dropdown-menu fs-5" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item fs-6" href="../office-room/office-room.html">Office Room</a></li>
           <li><a class="dropdown-item fs-6" href="../office-room/office-room-chairs.html">Office Chairs</a></li>
           <li><a class="dropdown-item fs-6" href="../office-room/office-room-workstation.html">Office Workstation</a></li>
           <li><a class="dropdown-item fs-6" href="../office-room/office-room-credenza.html">Office Credenza</a></li>
-          <li><a class="dropdown-item fs-6" href="../office-room/office-room-reception.html">Office Reception & Manager Desk</a></li>
-          <li><a class="dropdown-item fs-6" href="../office-room/office-room-meeting.html">Office Executive & Meeting Tables</a></li>
+          <li><a class="dropdown-item fs-6" href="../office-room/office-room-reception.html">Office Reception & Manager
+              Desk</a></li>
+          <li><a class="dropdown-item fs-6" href="office-room-meeting.html">Office Executive & Meeting
+              Tables</a></li>
         </ul>
       </div>
       <a class="hover" href="#">About us</a>
-      <a class="hover" href="#">Contact us</a>
+      <a class="hover" href="../contact.html">Contact us</a>
     </div>
 
 
@@ -172,6 +193,7 @@
   </main>
   <script src="../bootstrap file/bootstrap.bundle.min.js"></script>
   <script src="../scripts/jquery-3.7.1.min.js"></script>
+  <script src="../scripts/sweetalert.min.js"></script>
   <script src="../scripts/array.js"></script>
 
 </body>

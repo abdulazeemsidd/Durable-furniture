@@ -11,6 +11,14 @@ $(document).ready(function () {
   let diningRoomCrockery = $('.dining-room-crockery');
   let diningRoomChairs = $('.dining-room-chairs');
 
+  let livingRoom = $('.living-room');
+  let livingRoomSofas = $('.living-room-sofas');
+  let livingRoomShoeRacks = $('.living-room-shoe-racks');
+  let livingRoomOttomans = $('.living-room-ottomans');
+  let livingRoomEntertainment = $('.living-room-entertainment');
+  let livingRoomConsoles = $('.living-room-consoles');
+
+
   let officeRoom = $('.office-room');
   let officeRoomMeeting = $('.office-room-meeting');
   let officeRoomWorkstation = $('.office-room-workstation');
@@ -978,12 +986,1179 @@ $(document).ready(function () {
       },
       description: 'A rustic‑inspired shelving unit, the Timberland Shelf showcases the rich character of solid wood with a rugged, natural finish. Strong and spacious, its open tiers provide ample room for books, décor, or storage baskets, making it a functional centerpiece in living rooms, studies, or entryways.'
     },
-    // dining room finished
+
+
+    {
+      imgSrc: ['../pics/products/office-room/workstation1.webp', '../pics/products/office-room/workstation1-alt.webp', '../pics/products/office-room/workstation1-alt-2.webp'],
+      name: 'Nexus Workstation',
+      fullname: 'Nexus Workstation',
+      category: 'office-workstation',
+      price: {
+        original: 178000,
+        discounted: 145000
+      },
+      description: 'The Nexus Workstation is a sleek and functional office desk designed to enhance productivity and organization. Featuring a spacious work surface, integrated storage solutions, and a modern design, it provides the perfect environment for focused work and efficient multitasking.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation2.webp', '../pics/products/office-room/workstation2-alt.webp'],
+      name: 'Walt (NF-FL-07)',
+      fullname: 'Walt (NF-FL-07)',
+      category: 'office-workstation',
+      price: {
+        original: 143000,
+        discounted: 129000
+      },
+      description: 'The Walt NF-FL-07 is a versatile office workstation featuring a sleek design and ample storage, ideal for home offices and professional settings.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation3.webp', '../pics/products/office-room/workstation3-alt.webp'],
+      name: 'Chase (NF-A55-10)',
+      fullname: 'Chase (NF-A55-10)',
+      category: 'office-workstation',
+      price: {
+        original: 155000,
+        discounted: 129000
+      },
+      description: 'The Chase (NF-A55-10) case delivers robust protection with a sleek, modern design tailored for professionals on the move. Its durable build and refined appearance make it an ideal companion for both daily commutes and business travel.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation4.webp', '../pics/products/office-room/workstation4-alt.webp'],
+      name: 'Muller (WS-01)',
+      fullname: 'Muller (WS-01)',
+      category: 'office-workstation',
+      price: {
+        original: 125000,
+        discounted: 111500
+      },
+      description: 'The Muller (WS-01) workstation offers a modern, ergonomic design with built-in storage and a sleek finish. Its sturdy construction and thoughtful layout make it perfect for professionals seeking both style and functionality.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation5.webp'],
+      name: 'MO NF FL WORKSTATION 9624',
+      fullname: 'MO NF FL WORKSTATION 9624',
+      category: 'office-workstation',
+      price: {
+        original: 145000,
+        discounted: 122500
+      },
+      description: 'The MO NF FL WORKSTATION 9624 is a contemporary office desk designed for maximum productivity and organization. Featuring a spacious work surface, integrated storage solutions, and a sleek design, it provides the perfect environment for focused work and efficient multitasking.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation6.webp', '../pics/products/office-room/workstation6-alt.webp'],
+      name: 'MO Workstation 4896',
+      fullname: 'MO Workstation 4896 with duct with screen (MO-WS-BS-03-ALCOTT)',
+      category: 'office-workstation',
+      price: {
+        original: 95000,
+        discounted: 80500
+      },
+      description: 'The MO Workstation 4896 with duct and screen (MO-WS-BS-03-ALCOTT) is a modern office desk designed for maximum productivity and organization. Featuring a spacious work surface, integrated storage solutions, and a sleek design, it provides the perfect environment for focused work and efficient multitasking.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation7.webp', '../pics/products/office-room/workstation7-alt.webp'],
+      name: 'MO Workstation 2448',
+      fullname: 'MO Workstation 2448 without drawer with laminate screen (MO-WS-BS-03)',
+      category: 'office-workstation',
+      price: {
+        original: 26000,
+        discounted: 19500
+      },
+      description: 'The MO Workstation 2448 combines a spacious desk surface with a sleek laminate privacy screen, creating a focused yet open work area. Perfect for contemporary offices, it blends functionality with minimalist design to enhance productivity and collaboration.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation8.webp', '../pics/products/office-room/workstation8-alt.webp'],
+      name: 'MO Workstation 2496',
+      fullname: 'MO Workstation 2496 Without Duct Without Screen (MO-WS-BS-01-AUGUSTA)',
+      category: 'office-workstation',
+      price: {
+        original: 70000,
+        discounted: 52500
+      },
+      description: 'The MO Workstation 2496 is a minimalist office desk designed for clean lines and maximum functionality. Without ducts or screens, it offers a streamlined look that fits seamlessly into any modern office environment.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation9.webp', '../pics/products/office-room/workstation9-alt.webp'],
+      name: 'MO Workstation 9624',
+      fullname: 'MO Workstation 9624 Without Drawer With Screen & Flip Cover (MO-MULLER-WS-01)',
+      category: 'office-workstation',
+      price: {
+        original: 105000,
+        discounted: 95000
+      },
+      description: 'The MO Workstation 9624 is a contemporary office desk designed for maximum productivity and organization. Featuring a spacious work surface, integrated storage solutions, and a sleek design, it provides the perfect environment for focused work and efficient multitasking.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/workstation10.webp', '../pics/products/office-room/workstation10-alt.webp'],
+      name: 'MO Workstation 2448',
+      fullname: 'MO Workstation 2448 With Cabinet (MO-WS-BS-01-Aspen)',
+      category: 'office-workstation',
+      price: {
+        original: 68500,
+        discounted: 52500
+      },
+      description: 'The MO Workstation 2448 with cabinet combines storage efficiency with a compact footprint, ideal for small offices or shared workspaces. Its sturdy cabinet provides secure organization while maintaining a clean, professional appearance.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting1.webp'],
+      name: 'Meeting Table 4 Person',
+      fullname: 'Office Furniture - Meeting Table 4 Person - LAZO SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 19500,
+        discounted: 14625
+      },
+      description: 'The Meeting Table 4 Person from the LAZO SERIES is a sleek and functional office furniture piece designed for collaborative workspaces. With its modern design and durable construction, it provides an ideal setting for meetings, discussions, and teamwork.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting5.webp'],
+      name: 'Round Meeting Table 3 Person',
+      fullname: 'Office Furniture - Round Meeting Table 3 Person - PLEIN SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 19500,
+        discounted: 14625
+      },
+      description: 'The Round Meeting Table 3 Person from the PLEIN SERIES is a stylish and functional office furniture piece designed for collaborative workspaces. With its modern design and durable construction, it provides an ideal setting for meetings, discussions, and teamwork.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting8.webp'],
+      name: 'Round Meeting Table 3 Person - FINN SERIES',
+      fullname: 'Office Furniture - Round Meeting Table 3 Person - FINN SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 19500,
+        discounted: 14625
+      },
+      description: 'The Finn Series 3‑Person Round Meeting Table pairs compact elegance with practical function, offering a smooth, durable tabletop and a sturdy central base that encourages close‑quarter collaboration. Perfect for small meeting rooms or breakout spaces, it supports effortless conversation while available finishes and optional cable access keep devices tidy and professional.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting2.webp', '../pics/products/office-room/meeting2-alt.webp'],
+      name: 'Executive Table with Side Rack',
+      fullname: 'Office Furniture - Executive Table with Side Rack - PLEIN SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 60000,
+        discounted: 52500
+      },
+      description: 'The Executive Table with Side Rack from the PLEIN SERIES is a premium office furniture piece designed for executive workspaces. With its elegant design and robust construction, it offers both functionality and style for high-level meetings and discussions.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting3.webp', '../pics/products/office-room/meeting3-alt.webp'],
+      name: 'Executive Table with Side Rack - FINN SERIES',
+      fullname: 'Office Furniture - Executive Table with Side Rack - FINN SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 60000,
+        discounted: 52500
+      },
+      description: 'The Executive Table with Side Rack from the FINN SERIES is a premium office furniture piece designed for executive workspaces. With its elegant design and robust construction, it offers both functionality and style for high-level meetings and discussions.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting4.webp', '../pics/products/office-room/meeting4-alt.webp'],
+      name: 'Executive Table with Side Rack - DYNAMIC SERIES',
+      fullname: 'Office Furniture - Executive Table with Side Rack - DYNAMIC SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 60000,
+        discounted: 52500
+      },
+      description: 'The DYNAMIC SERIES Executive Table with Side Rack blends bold, modern lines with functional organization—offering a generous work surface and an integrated side rack for files, devices, and quick-access storage. Constructed from premium materials with a durable finish and built‑in cable management, it creates a professional, ergonomic workspace ideal for focused work and executive meetings.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting6.webp'],
+      name: 'Meeting Table 6 Person - PLEIN SERIES',
+      fullname: 'Office Furniture - Meeting Table 6 Person - PLEIN SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 75000,
+        discounted: 62500
+      },
+      description: 'The PLEIN SERIES Meeting Table 6 Person is a modern and functional office furniture piece designed for collaborative workspaces. With its sleek design and durable construction, it provides an ideal setting for meetings, discussions, and teamwork.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting7.webp'],
+      name: 'Office Furniture - Meeting Table 8 Person - LAZO SERIES',
+      fullname: 'Office Furniture - Meeting Table 8 Person - LAZO SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 75000,
+        discounted: 62500
+      },
+      description: 'The Lazo Series 8‑Person Meeting Table is a spacious, contemporary conference table designed for collaborative meetings and presentations. It features a clean, minimalist profile, integrated cable management and power access, and a durable finish that withstands heavy use—making it ideal for boardrooms, client sessions, and team huddles.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting9.webp'],
+      name: 'Meeting Table 6 Person - FINN SERIES',
+      fullname: 'Office Furniture - Meeting Table 6 Person - FINN SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 65000,
+        discounted: 42500
+      },
+      description: 'The FINN SERIES Meeting Table 6 Person is a modern and functional office furniture piece designed for collaborative workspaces. With its sleek design and durable construction, it provides an ideal setting for meetings, discussions, and teamwork.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting10.webp'],
+      name: 'Meeting Table 8 Person - DYNAMIC SERIES',
+      fullname: 'Office Furniture - Meeting Table 8 Person - DYNAMIC SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 65000,
+        discounted: 42500
+      },
+      description: 'The DYNAMIC SERIES 8‑Person Meeting Table combines commanding presence with practical function, offering a large, seamless tabletop, integrated cable management, and optional power/data modules for uninterrupted meetings. Built with premium materials and a refined finish, it supports collaborative discussions, presentations, and executive decision‑making while maintaining a professional, modern aesthetic.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/meeting11.webp', '../pics/products/office-room/meeting11-alt.webp'],
+      name: 'Executive Table with Side Rack - LAZO SERIES',
+      fullname: 'Office Furniture - Executive Table with Side Rack - LAZO SERIES',
+      category: 'office-meeting',
+      price: {
+        original: 85000,
+        discounted: 72500
+      },
+      description: 'The Executive Table with Side Rack from the LAZO SERIES is a premium office furniture piece designed for executive workspaces. With its elegant design and robust construction, it offers both functionality and style for high-level meetings and discussions.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/chair1.webp', '../pics/products/office-room/chair1-alt.webp', '../pics/products/office-room/chair1-alt-2.webp'],
+      name: 'Anatom Teller LBC',
+      fullname: 'Anatom Teller LBC',
+      category: 'office-chairs',
+      price: {
+        original: 30500,
+        discounted: 25500
+      },
+      description: 'The Anatom Teller LBC is an ergonomic office chair designed for comfort and support during long work sessions. With its adjustable features, breathable materials, and sleek design, it provides a comfortable seating solution for any office environment.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/chair2.webp', '../pics/products/office-room/chair2-alt.webp', '../pics/products/office-room/chair2-alt-2.webp'],
+      name: 'Master Cres LBC',
+      fullname: 'Master Cres LBC',
+      category: 'office-chairs',
+      price: {
+        original: 49500,
+        discounted: 39500
+      },
+      description: 'The Master Cres LBC is a high-end office chair that combines ergonomic design with luxurious comfort. Featuring adjustable settings, premium materials, and a sleek aesthetic, it is ideal for professionals seeking both style and functionality in their workspace.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/chair3.webp', '../pics/products/office-room/chair3-alt.webp', '../pics/products/office-room/chair3-alt-2.webp'],
+      name: 'Master Genesis LBC',
+      fullname: 'Master Genesis LBC Double Shell (Wooden Arm)',
+      category: 'office-chairs',
+      price: {
+        original: 53500,
+        discounted: 44500
+      },
+      description: 'The Master Genesis LBC Double Shell with Wooden Arm is a sophisticated office chair that combines ergonomic support with elegant design. Featuring a double-shell construction for enhanced comfort and wooden armrests for a touch of classic style, it is perfect for professionals seeking a blend of functionality and aesthetics in their workspace.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/chair4.webp', '../pics/products/office-room/chair4-alt.webp', '../pics/products/office-room/chair4-alt-2.webp'],
+      name: 'Anatom Low Back Chair',
+      fullname: 'Anatom Low Back Chair',
+      category: 'office-chairs',
+      price: {
+        original: 24500,
+        discounted: 19500
+      },
+      description: 'The Anatom Low Back Chair is a comfortable and ergonomic office chair designed for long working hours. With its low back design and supportive features, it provides excellent comfort and posture support for professionals in demanding work environments.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/chair5.webp'],
+      name: 'Revolving Chair Metal AB HB 302',
+      fullname: 'Office Furniture - Revolving Chair Metal AB HB 302',
+      category: 'office-chairs',
+      price: {
+        original: 31500,
+        discounted: 24500
+      },
+      description: 'The Revolving Chair Metal AB HB 302 is a modern office chair with a rotating base, designed for comfort and functionality in professional settings. Its sleek design and smooth rotation make it an ideal choice for collaborative workspaces.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/chair6.webp'],
+      name: 'Executive Chair with Head Rest - AB HB088',
+      fullname: 'Office Furniture - Executive Chair with Head Rest - AB HB088',
+      category: 'office-chairs',
+      price: {
+        original: 29500,
+        discounted: 20000
+      },
+      description: 'The Executive Chair with Head Rest - AB HB088 is a premium office chair designed for comfort and support. Featuring a headrest and ergonomic design, it provides excellent comfort for long working hours in professional environments.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/chair7.webp'],
+      name: 'Revolving Manager Chair Low Back - AB HB2020',
+      fullname: 'Office Furniture - Revolving Manager Chair Low Back - AB HB2020',
+      category: 'office-chairs',
+      price: {
+        original: 27500,
+        discounted: 20000
+      },
+      description: 'The Revolving Manager Chair Low Back - AB HB2020 is a stylish and functional office chair designed for managers and professionals. With its revolving base and low back design, it offers comfort and mobility in the workplace.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza1.webp', '../pics/products/office-room/credenza1-alt.webp', '../pics/products/office-room/credenza1-alt-2.webp'],
+      name: 'Callisto Credenza',
+      fullname: 'Callisto Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 31500,
+        discounted: 23000
+      },
+      description: 'The Callisto Credenza is a stylish and functional office credenza designed for storage and organization in professional environments. Its elegant design and practical features make it an ideal addition to any office space.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza2.webp'],
+      name: 'Arc Credenza 2.0',
+      fullname: 'Arc Credenza 2.0',
+      category: 'office-credenza',
+      price: {
+        original: 50000,
+        discounted: 35000
+      },
+      description: 'The Arc Credenza 2.0 is a modern and functional office credenza designed for storage and organization in professional environments. Its sleek design and practical features make it an ideal addition to any office space.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza3.webp', '../pics/products/office-room/credenza3-alt.webp', '../pics/products/office-room/credenza3-alt-2.webp'],
+      name: 'Athan Executive Credenza',
+      fullname: 'Athan Executive Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 65000,
+        discounted: 43000
+      },
+      description: 'The Athan Executive Credenza is a sophisticated office storage solution designed for executives and professionals. With its elegant design and ample storage space, it provides both functionality and style for organizing office essentials.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza4.webp', '../pics/products/office-room/credenza4-alt.webp', '../pics/products/office-room/credenza4-alt-2.webp'],
+      name: 'Aurora Credenza',
+      fullname: 'Aurora Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 68000,
+        discounted: 45000
+      },
+      description: 'The Aurora Credenza is a modern and functional office storage solution designed for professionals. With its sleek design and ample storage space, it provides both functionality and style for organizing office essentials.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza5.webp', '../pics/products/office-room/credenza5-alt.webp', '../pics/products/office-room/credenza5-alt-2.webp'],
+      name: 'Beall Credenza',
+      fullname: 'Beall Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 60000,
+        discounted: 45000
+      },
+      description: 'The Beall Credenza is a stylish and functional office storage solution designed for professionals. With its elegant design and ample storage space, it provides both functionality and style for organizing office essentials.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza6.webp', '../pics/products/office-room/credenza6-alt.webp'],
+      name: 'Champion Credenza',
+      fullname: 'Champion Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 45000,
+        discounted: 35000
+      },
+      description: 'The Champion Credenza is a robust storage unit combining generous filing and shelf space with a refined, executive finish. Built for durability and organization, it features soft‑close drawers, a lockable cabinet option, and integrated cable access—ideal for executive offices and reception areas.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza7.webp', '../pics/products/office-room/credenza7-alt.webp'],
+      name: 'Emmy Credenza',
+      fullname: 'Emmy Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 33000,
+        discounted: 25000
+      },
+      description: 'The Emmy Credenza is a stylish and functional office storage solution designed for professionals. With its elegant design and ample storage space, it provides both functionality and style for organizing office essentials.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza8.webp', '../pics/products/office-room/credenza8-alt.webp'],
+      name: 'Gramy Credenza',
+      fullname: 'Gramy Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 38000,
+        discounted: 30000
+      },
+      description: 'The Gramy Credenza is a modern and functional office storage solution designed for professionals. With its sleek design and ample storage space, it provides both functionality and style for organizing office essentials.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza9.webp', '../pics/products/office-room/credenza9-alt.webp'],
+      name: 'Ring Credenza',
+      fullname: 'Ring Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 41000,
+        discounted: 29000
+      },
+      description: 'The Ring Credenza features elegant circular‑accent detailing and generous concealed storage, blending visual interest with practical organization. Built from durable materials with soft‑close drawers and optional lockable compartments and cable management, it’s ideal for executive offices, reception areas, and meeting spaces.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/credenza10.webp', '../pics/products/office-room/credenza10-alt.webp'],
+      name: 'Rising Credenza',
+      fullname: 'Rising Credenza',
+      category: 'office-credenza',
+      price: {
+        original: 45000,
+        discounted: 31000
+      },
+      description: 'The Rising Credenza combines vertical storage innovation with a sleek profile, featuring lift‑top shelving and soft‑close drawers for easy access and secure organization. Built from durable materials with optional locking and integrated cable management, it’s ideal for modern offices and reception areas where style meets functionality.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/reception1.webp', '../pics/products/office-room/reception1-alt.webp', '../pics/products/office-room/reception1-alt-2.webp'],
+      name: 'AIKE Reception Counter',
+      fullname: 'AIKE Reception Counter',
+      category: 'office-reception',
+      price: {
+        original: 115000,
+        discounted: 100000
+      },
+      description: 'The AIKE Reception Counter is a sleek and functional office furniture piece designed for reception areas. With its modern design and durable construction, it provides an ideal setting for welcoming guests and managing front desk operations.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/reception2.webp', '../pics/products/office-room/reception2-alt.webp', '../pics/products/office-room/reception2-alt-2.webp'],
+      name: 'Gramy - Reception Table',
+      fullname: 'Gramy - Reception Table',
+      category: 'office-reception',
+      price: {
+        original: 115000,
+        discounted: 100000
+      },
+      description: 'The Gramy Reception Table makes a strong first impression with a welcoming, sculpted front and durable construction built for high‑traffic lobbies. Thoughtfully designed with integrated storage and cable management, it pairs elegant finishes with practical functionality for reception desks, check‑in counters, and guest-facing spaces.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/manager1.webp', '../pics/products/office-room/manager1-alt.webp', '../pics/products/office-room/manager1-alt-2.webp'],
+      name: 'Carl Manager Table',
+      fullname: 'Carl Manager Table',
+      category: 'office-reception',
+      price: {
+        original: 50000,
+        discounted: 40000
+      },
+      description: 'The Carl Manager Table is a sophisticated and functional office furniture piece designed for executive desks. With its modern design and durable construction, it provides an ideal setting for managing workspaces with integrated storage and cable management.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/manager2.webp', '../pics/products/office-room/manager2-alt.webp'],
+      name: 'Fawn Manager Table',
+      fullname: 'Fawn Manager Table',
+      category: 'office-reception',
+      price: {
+        original: 60000,
+        discounted: 45000
+      },
+      description: 'The Fawn Manager Table combines a warm, natural finish with a compact executive footprint, offering a spacious work surface and integrated storage for everyday management tasks. Thoughtfully detailed with cable management and durable construction, it balances professional style with practical functionality for private offices and workstations.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/manager3.webp', '../pics/products/office-room/manager3-alt.webp'],
+      name: 'iTech Height Adjustable Manager Table',
+      fullname: 'iTech Height Adjustable Manager Table',
+      category: 'office-reception',
+      price: {
+        original: 49500,
+        discounted: 45000
+      },
+      description: 'The iTech Height Adjustable Manager Table is a versatile office furniture piece designed for executive workspaces. With its modern design and durable construction, it provides an ideal setting for managing workspaces with integrated storage and cable management, while the height-adjustable feature promotes ergonomic comfort.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/manager4.webp', '../pics/products/office-room/manager4-alt.webp', '../pics/products/office-room/manager4-alt-2.webp'],
+      name: 'Magic Manager Table',
+      fullname: 'Magic Manager Table',
+      category: 'office-reception',
+      price: {
+        original: 55000,
+        discounted: 42500
+      },
+      description: 'The Magic Manager Table is a stylish and functional office furniture piece designed for executive desks. With its modern design and durable construction, it provides an ideal setting for managing workspaces with integrated storage and cable management.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/manager5.webp', '../pics/products/office-room/manager5-alt.webp'],
+      name: 'Norway Manager Table',
+      fullname: 'Norway Manager Table',
+      category: 'office-reception',
+      price: {
+        original: 40000,
+        discounted: 35000
+      },
+      description: 'The Norway Manager Table combines a sleek, modern design with practical functionality, offering a spacious work surface and integrated storage for everyday management tasks. Thoughtfully detailed with cable management and durable construction, it balances professional style with practical functionality for private offices and workstations.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/manager6.webp', '../pics/products/office-room/manager6-alt.webp'],
+      name: 'Manager Desk with Side Rack - PLEIN SERIES',
+      fullname: 'Office Furniture - Manager Desk with Side Rack - PLEIN SERIES',
+      category: 'office-reception',
+      price: {
+        original: 65000,
+        discounted: 50000
+      },
+      description: 'The Manager Desk with Side Rack from the PLEIN SERIES is a premium office furniture piece designed for executive workspaces. With its elegant design and robust construction, it offers both functionality and style for managing workspaces with integrated storage and cable management.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/reception3.webp'],
+      name: 'Office Furniture - Reception Desk - FINN SERIES',
+      fullname: 'Office Furniture - Reception Desk - FINN SERIES',
+      category: 'office-reception',
+      price: {
+        original: 44000,
+        discounted: 33000
+      },
+      description: 'The FINN SERIES Reception Desk combines a welcoming, sculpted front with durable construction built for high‑traffic lobbies. Thoughtfully designed with integrated storage and cable management, it pairs elegant finishes with practical functionality for reception desks, check‑in counters, and guest-facing spaces.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/reception4.webp', '../pics/products/office-room/reception4-alt.webp', '../pics/products/office-room/reception4-alt-2.webp'],
+      name: 'Reception Desk - LAZO SERIES',
+      fullname: 'Office Furniture - Reception Desk - LAZO SERIES',
+      category: 'office-reception',
+      price: {
+        original: 68000,
+        discounted: 51000
+      },
+      description: 'The LAZO SERIES Reception Desk combines a welcoming, sculpted front with durable construction built for high‑traffic lobbies. Thoughtfully designed with integrated storage and cable management, it pairs elegant finishes with practical functionality for reception desks, check‑in counters, and guest-facing spaces.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/reception5.webp'],
+      name: 'Reception Desk - PLEIN SERIES',
+      fullname: 'Office Furniture - Reception Desk - PLEIN SERIES',
+      category: 'office-reception',
+      price: {
+        original: 45000,
+        discounted: 33000
+      },
+      description: 'The PLEIN Series reception desk showcases clean, geometric lines with a generous countertop and concealed storage—a modern focal point for any lobby or front office. Built with durable construction and optional integrated lighting or cable management, it combines stylish minimalism with the functionality reception staff need.'
+    },
+    {
+      imgSrc: ['../pics/products/office-room/reception6.webp'],
+      name: 'Reception Desk - DYNAMIC SERIES',
+      fullname: 'Office Furniture - Reception Desk - DYNAMIC SERIES',
+      category: 'office-reception',
+      price: {
+        original: 30000,
+        discounted: 22000
+      },
+      description: 'The DYNAMIC SERIES reception desk delivers a bold, contemporary statement with its sweeping front panel and generous work surface, perfectly suited for modern lobbies and front‑of‑house spaces. Designed for functionality, it includes built‑in storage, cable management, and optional lighting, combining durability with a polished aesthetic that greets visitors with professionalism.'
+    },
+
+    // azeem update 
+    // living room start
+    {
+      imgSrc: ['../pics/products/living-room/chair1.webp', '../pics/products/living-room/chair1-alt.webp', '../pics/products/living-room/chair1-alt-2.webp'],
+      name: 'Rovak Sofa Set',
+      fullname: 'Rovak Sofa Set Bundle (3+2 seater) Grey',
+      category: 'living-room-sofas',
+      price: {
+        original: 157000,
+        discounted: 88000
+      },
+      description: 'Sleek Modern Aesthetic Elevate your living space with the Rovak Sofa Set, featuring a sophisticated grey finish that complements any contemporary interior. This 3+2 seater bundle is designed to provide a perfect balance of style and functionality, making it the focal point of your home.'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair2.webp', '../pics/products/living-room/chair2-alt.webp', '../pics/products/living-room/chair2-alt-2.webp'],
+      name: 'Osborne Sofa',
+      fullname: 'Osborne Sofa HLD-24 (2 + 3 Seater) bundle',
+      category: 'living-room-sofas',
+      price: {
+        original: 150000,
+        discounted: 89000
+      },
+      description: 'The Osborne Sofa HLD-24 (2 + 3 Seater) bundle is a contemporary and cost-effective seating solution designed for modern living rooms and formal drawing areas. This specific HLD-24 variant stands out for its sleek faux leather finish, offering a more structured and easy-to-maintain alternative to the fabric versions in the Osborne range. '
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair3.webp', '../pics/products/living-room/chair3-alt.webp', '../pics/products/living-room/chair3-alt-2.webp'],
+      name: 'Harry Sofa',
+      fullname: 'Harry Sofa 2+3 Seater Set Bundle',
+      category: 'living-room-sofas',
+      price: {
+        original: 120000,
+        discounted: 68000
+      },
+      description: 'Upgrade your living space with the Harry Sofa Bundle, a perfect blend of contemporary style and cloud-like comfort. This set includes both the spacious 3-seater and the cozy 2-seater, offering a cohesive, high-end look for your home.'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair4.webp', '../pics/products/living-room/chair4-alt.webp', '../pics/products/living-room/chair4-alt-2.webp'],
+      name: 'Osborne L Shape sofa',
+      fullname: 'Osborne L Shape sofa (202-18)',
+      category: 'living-room-sofas',
+      price: {
+        original: 110000,
+        discounted: 75000
+      },
+      description: 'The Osborne L-Shape Sofa (202-18) is a versatile, modern sectional from Habitt, designed for those who want to maximize seating without taking up the entire room. Unlike the HLD-24 bundle which consists of separate units, this is a continuous L-shaped piece'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair5.webp', '../pics/products/living-room/chair5-alt.webp', '../pics/products/living-room/chair5-alt-2.webp'],
+      name: 'Haven Coffee Table',
+      fullname: 'Haven Coffee Table',
+      category: 'living-room-sofas',
+      price: {
+        original: 120000,
+        discounted: 99000
+      },
+      description: 'The Haven Coffee Table from Habitt is a standout piece in their "Bargain" series, known for its unique blend of soft textures and modern structural design. Unlike traditional all-wood coffee tables, the Haven model is designed to add a layer of "plush" elegance to a living space.'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair6.webp', '../pics/products/living-room/chair6.webp',],
+      name: 'Osborne Sofa',
+      fullname: 'Osborne Sofa 2 + 3 seater bundle',
+      category: 'living-room-sofas',
+      price: {
+        original: 110000,
+        discounted: 75000
+      },
+      description: 'The Osborne Sofa 2 + 3 Seater Bundle from Habitt is a complete living room set designed for modern, space-conscious homes. It offers a coordinated look by combining a 2-seater and a 3-seater sofa, typically available in either Suede Fabric or Faux Leather (HLD-24).'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair7.webp', '../pics/products/living-room/chair7-alt.webp', '../pics/products/living-room/chair7-alt-2.webp'],
+      name: 'Sutherland X Sofa 2 Seater',
+      fullname: 'Sutherland X Sofa 2 Seater',
+      category: 'living-room-sofas',
+      price: {
+        original: 150000,
+        discounted: 84000
+      },
+      description: 'The Sutherland X 2-Seater Sofa is a premium, contemporary piece from Habitt’s luxury collection. It is designed to be a "classy yet comfortable" centerpiece, featuring a sophisticated silhouette that works well in both minimalist and formal settings.'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair9.webp', '../pics/products/living-room/chair9-alt.webp', '../pics/products/living-room/chair9-alt-2.webp'],
+      name: 'Osborne Sofa',
+      fullname: 'Osborne Sofa HLD-24 (2 + 3 Seater) bundle',
+      category: 'living-room-sofas',
+      price: {
+        original: 322000,
+        discounted: 263000
+      },
+      description: 'The Osborne series is known for its "less is more" aesthetic. This bundle includes both the 2-seater and 3-seater units, ensuring a coordinated look for your lounge. Unlike the fabric versions of the Osborne range, the HLD-24 features a durable faux leather upholstery that offers a premium look with significantly easier maintenance.'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair8.webp', '../pics/products/living-room/chair8-alt.webp', '../pics/products/living-room/chair8-alt-2.webp'],
+      name: 'Lazo Executive Sofa Set',
+      fullname: 'Lazo Executive Sofa Set – Premium Leatherette Office Sofa in Black (Single Seater, 2-Seater, or 4-Seater Bundle)',
+      category: 'living-room-sofas',
+      price: {
+        original: 150000,
+        discounted: 84000
+      },
+      description: 'The Lazo Executive Sofa Set is a premium office furniture range from Habitt designed specifically for professional environments, such as executive cabins, reception areas, and corporate lounges. Unlike the home-oriented Osborne series, the Lazo focuses on a sleek, high-profile "executive" aesthetic with high-density support.'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair10.webp', '../pics/products/living-room/chair10-alt.webp', '../pics/products/living-room/chair10-alt-2.webp'],
+      name: 'Billy L Shape Sofa',
+      fullname: 'Billy L Shape Sofa',
+      category: 'living-room-sofas',
+      price: {
+        original: 110000,
+        discounted: 79000
+      },
+      description: 'The Billy L-Shape Sofa from Habitt is a popular, space-saving sectional designed for smaller urban lounges and TV rooms. It is widely recognized for its "classical touch" and versatility, often positioned as one of the most budget-friendly L-shaped options in their collection.'
+
+    },
+    {
+      imgSrc: ['../pics/products/living-room/chair11.webp', '../pics/products/living-room/chair11-alt.webp', '../pics/products/living-room/chair11-alt-2.webp'],
+      name: 'Billy 2 Seater Sofa',
+      fullname: 'Billy 2 Seater Sofa',
+      category: 'living-room-sofas',
+      price: {
+        original: 140000,
+        discounted: 79000
+      },
+      description: 'Perfect for small apartments, cozy reading nooks, or as a chic accent piece, the Billy 2-Seater Sofa blends mid-century charm with modern functionality. Its streamlined silhouette and tapered legs offer an airy, open feel that overwhelm your space.'
+
+    },
+
+    // array of shoe racks 
+    {
+      imgSrc: ['../pics/products/living-room/racks1.webp', '../pics/products/living-room/racks1-alt.webp', '../pics/products/living-room/racks1-alt-2.webp'],
+      name: 'Ramzo Shoe Rack',
+      fullname: 'Ramzo Shoe Rack',
+      category: 'shoe-racks',
+      price: {
+        original: 10000,
+        discounted: 5600
+      },
+      description: 'Built for the busy household that does not want to sacrifice style for durability, the Ramzo Shoe Rack is a powerhouse of organization. With its bold lines and reinforced construction, the Ramzo collection brings an industrial edge to your entryway while keeping your footwear collection perfectly staged and accessible.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks2.webp', '../pics/products/living-room/racks2-alt.webp', '../pics/products/living-room/racks2-alt-2.webp'],
+      name: 'Rica Shoe Rack',
+      fullname: 'Rica Shoe Rack',
+      category: 'shoe-racks',
+      price: {
+        original: 15000,
+        discounted: 8000
+      },
+      description: 'Clean, contemporary, and incredibly versatile, the Rica Shoe Rack is the ultimate "no-fuss" storage solution. Designed with a slim metal or light-wood profile, the Rica focuses on an airy, open-concept look that keeps your entryway feeling spacious while keeping your footwear perfectly aligned.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks3.webp', '../pics/products/living-room/racks3-alt.webp', '../pics/products/living-room/racks3-alt-2.webp'],
+      name: 'Teca Shoe Rack',
+      fullname: 'Teca Shoe Rack',
+      category: 'shoe-racks',
+      price: {
+        original: 100000,
+        discounted: 50000
+      },
+      description: 'Add a touch of timeless character to your home with the Teca Shoe Rack. Named for its rich tones and structural elegance, the Teca collection is designed for those who appreciate the beauty of wood grain and the efficiency of smart organization. It’s a furniture-grade solution that turns a messy entryway into a warm, welcoming gallery.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks4.webp', '../pics/products/living-room/racks4-alt.webp', '../pics/products/living-room/racks4-alt-2.webp'],
+      name: 'Finn Shoe Rack',
+      fullname: 'Finn Shoe Rack',
+      category: 'shoe-racks',
+      price: {
+        original: 55000,
+        discounted: 48000
+      },
+      description: 'Bring a touch of Nordic charm to your entryway with the Finn Shoe Rack. Inspired by clean, functional Scandinavian design, the Finn collection balances warm aesthetics with a sturdy, practical frame. It’s the perfect solution for those who want their home to feel calm and curated the moment they step through the door.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks5.webp', '../pics/products/living-room/racks5-alt.webp', '../pics/products/living-room/racks5-alt-2.webp'],
+      name: 'Edge Shoe Rack',
+      fullname: 'Edge Shoe Rack – Sleek Tiered Organizer for Heels & Flats',
+      category: 'shoe-racks',
+      price: {
+        original: 9000,
+        discounted: 6000
+      },
+      description: 'Elevate your closet or entryway with the Edge Shoe Rack, a high-performance organizer designed specifically for the modern shoe lover. With its ultra-slim profile and specialized tiered design, the Edge provides a sophisticated home for everything from towering stilettos to minimalist flats.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks6.webp', '../pics/products/living-room/racks6-alt.webp', '../pics/products/living-room/racks6-alt-2.webp'],
+      name: 'Roy Shoe Rack',
+      fullname: 'Roy Shoe Rack',
+      category: 'shoe-racks',
+      price: {
+        original: 99000,
+        discounted: 86000
+      },
+      description: 'Keep your footwear neatly organized and protected with this Modern PVC Shoe Cabinet 2 Layers. Designed with a sleek black swirl-pattern frame and frosted translucent doors, this compact shoe storage unit blends functionality with contemporary style. The dual-layer design provides ample space for everyday shoes, sandals, sneakers, and flats while keeping them dust-free and easily accessible.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks7.webp', '../pics/products/living-room/racks7-alt.webp', '../pics/products/living-room/racks7-alt-2.webp'],
+      name: 'Modern PVC Shoe Cabinet',
+      fullname: 'Modern PVC Shoe Cabinet 2 Layers – Dustproof Stackable Shoe Storage Organizer with Translucent Doors',
+      category: 'shoe-racks',
+      price: {
+        original: 8000,
+        discounted: 7500
+      },
+      description: ''
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks8.webp', '../pics/products/living-room/racks8-alt.webp', '../pics/products/living-room/racks8-alt-2.webp'],
+      name: 'Foldable Shoe Rack',
+      fullname: 'Foldable Shoe Rack with Wall Hanging – 4 Tier / 5 Tier Space Saving Shoe Organizer',
+      category: 'shoe-racks',
+      price: {
+        original: 10000,
+        discounted: 9500
+      },
+      description: 'Meet the most versatile storage solution for tight spaces. Whether you choose the 4-Tier or 5-Tier model, this Foldable Wall-Hanging Shoe Rack is engineered to clear your floor and streamline your routine. Its unique hybrid design allows it to stand freely or mount securely to walls and doors, making it a "must-have" for dorms, small apartments, and busy mudrooms.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks9.webp'],
+      name: 'Modern PVC Shoe Cabinet',
+      fullname: 'Modern PVC Shoe Cabinet 2 Layers – Dustproof Stackable Shoe Storage Organizer with Translucent Doors',
+      category: 'shoe-racks',
+      price: {
+        original: 10000,
+        discounted: 5000
+      },
+      description: 'Upgrade your home organization with the Modern PVC 2-Tier Shoe Cabinet. Designed for those who value both aesthetics and hygiene, this cabinet features a minimalist profile with translucent doors, allowing you to identify your favorite pair at a glance while keeping them protected from dust and debris.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/racks10.webp', '../pics/products/living-room/racks10-alt.webp', '../pics/products/living-room/racks10-alt-2.webp'],
+      name: 'Bamboo Shoe Rack',
+      fullname: 'Bamboo Shoe Rack 6 Floor – Natural Wooden Storage Organizer',
+      category: 'shoe-racks',
+      price: {
+        original: 10000,
+        discounted: 5000
+      },
+      description: 'Tired of entryway clutter? The Bamboo 6-Tier Shoe Rack offers a sustainable and stylish way to reclaim your space. Crafted from 100% natural bamboo, this vertical organizer maximizes storage without sacrificing floor space, making it an ideal fit for narrow hallways, walk-in closets, or mudrooms.'
+    },
+
+    // benches-ottomans starts 
+
+    {
+      imgSrc: ['../pics/products/living-room/ottomans1.webp', '../pics/products/living-room/ottomans1-alt.webp', '../pics/products/living-room/ottomans1-alt-2.webp'],
+      name: 'Brown Punched Puff',
+      fullname: 'Brown Punched Puff',
+      category: 'ottomans',
+      price: {
+        original: 30000,
+        discounted: 27000
+      },
+      description: 'A perfect blend of structured detail and airy comfort. Featuring an intricate perforated "punched" texture across a voluminous, pillowy silhouette, this piece brings a sophisticated touch to a classic earthy palette. Stylish, tactile, and effortlessly versatile'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans2.webp', '../pics/products/living-room/ottomans2-alt.webp', '../pics/products/living-room/ottomans2-alt-2.webp'],
+      name: 'Taj Pouf',
+      fullname: 'Taj Pouf',
+      category: 'ottomans',
+      price: {
+        original: 45000,
+        discounted: 31000
+      },
+      description: 'Bring a touch of artisanal elegance to your home with the Taj Pouf. Hand-finished in a rich, earthy brown, this piece features intricate "punched" perforations inspired by traditional Moroccan motifs. Its firm, supportive "puff" silhouette makes it a versatile triple-threat: a sophisticated footrest, a chic side table, or extra seating for guests.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans3.webp', '../pics/products/living-room/ottomans3-alt.webp', '../pics/products/living-room/ottomans3-alt-2.webp'],
+      name: 'Shahi Pouf Purple',
+      fullname: 'Shahi Pouf Purple',
+      category: 'ottomans',
+      price: {
+        original: 38000,
+        discounted: 30000
+      },
+      description: 'Exude effortless luxury with the Shahi Pouf in a deep, regal purple. Named for the Persian word for "Royal," this pouf is a masterpiece of texture and tone. Its lush, jewel-toned exterior is accented by intricate punched detailing, offering a sophisticated "puff" silhouette that commands attention in any room.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans4.webp', '../pics/products/living-room/ottomans4-alt.webp', '../pics/products/living-room/ottomans4-alt-2.webp'],
+      name: 'Black Punched Puff',
+      fullname: 'Black Punched Puff',
+      category: 'ottomans',
+      price: {
+        original: 30000,
+        discounted: 25000
+      },
+      description: 'The ultimate in modern minimalism. This sleek, jet-black pouf features a precision "punched" perforated texture that breaks up the monochromatic tone with subtle architectural depth. Its bold, pillowy silhouette offers a high-contrast look that fits perfectly in industrial, contemporary, or monochromatic interiors.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans5.webp'],
+      name: 'Richard Settee LF-102',
+      fullname: 'Richard Settee LF-102',
+      category: 'ottomans',
+      price: {
+        original: 88000,
+        discounted: 57000
+      },
+      description: 'The Richard Settee LF-102 is a masterclass in mid-century modern elegance, blending minimalist lines with a high-end, architectural feel. Designed to be a statement piece that does not overwhelm a room, it’s a favorite for those who appreciate the "less is more" philosophy'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans6.webp', '../pics/products/living-room/ottomans6-alt.webp', '../pics/products/living-room/ottomans6-alt-2.webp'],
+      name: 'Nimoy Wooden Arm Setti',
+      fullname: 'Nimoy Wooden Arm Setti',
+      category: 'ottomans',
+      price: {
+        original: 29000,
+        discounted: 24000
+      },
+      description: 'The Nimoy Wooden Arm Settee is a sophisticated blend of mid-century aesthetics and practical modern design. It is particularly known for its unique structural elements that allow it to function as both a comfortable seat and a utility surface.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans7.webp', '../pics/products/living-room/ottomans7-alt.webp', '../pics/products/living-room/ottomans7-alt-2.webp'],
+      name: 'Togo Puff',
+      fullname: 'Togo Puff',
+      category: 'ottomans',
+      price: {
+        original: 39000,
+        discounted: 35000
+      },
+      description: 'The Togo Puff (often referred to as the Togo Ottoman or Footstool) is the versatile, low-profile companion to the world-famous Togo seating collection. Designed by Michel Ducaroy for Ligne Roset in 1973, it carries the same "tube of toothpaste" inspired aesthetic that redefined modern lounging.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans8.webp', '../pics/products/living-room/ottomans8-alt.webp', '../pics/products/living-room/ottomans8-alt-2.webp'],
+      name: 'Richard Setti LF-70',
+      fullname: 'Richard Setti LF-70',
+      category: 'ottomans',
+      price: {
+        original: 80000,
+        discounted: 58000
+      },
+      description: 'The Richard Settee LF-70 (also known as the Richard Setti) is an artful, bench-style seating piece designed primarily for bedrooms and formal entryways. While it shares the "Richard" name with other contemporary sofas, the LF-70 is distinct for its sleek, armless bench silhouette and its connection to nature-inspired palettes'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans9.webp', '../pics/products/living-room/ottomans9-alt.webp', '../pics/products/living-room/ottomans9-alt-2.webp'],
+      name: 'Nash Puff',
+      fullname: 'Nash Puff',
+      category: 'ottomans',
+      price: {
+        original: 30000,
+        discounted: 25000
+      },
+      description: 'The Nash Puff (or Nash Ottoman) is a contemporary, block-style accent piece designed with a focus on geometric simplicity and "sink-in" comfort. It is the quintessential modern footstool that doubles as an informal seat or a soft coffee table.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans10.webp', '../pics/products/living-room/ottomans10-alt.webp', '../pics/products/living-room/ottomans10-alt-2.webp'],
+      name: 'Russo Puff',
+      fullname: 'Russo Puff',
+      category: 'ottomans',
+      price: {
+        original: 40500,
+        discounted: 28000
+      },
+      description: 'The Russo Puff (often listed as the Russo Ottoman) is a vibrant, multi-functional accent piece designed to balance modern luxury with space-saving utility. It is widely recognized for its bold use of color and high-end metallic detailing.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans11.webp', '../pics/products/living-room/ottomans11-alt.webp', '../pics/products/living-room/ottomans11-alt-2.webp'],
+      name: 'Hem Puff',
+      fullname: 'Hem Puff',
+      category: 'ottomans',
+      price: {
+        original: 84000,
+        discounted: 56000
+      },
+      description: 'The Hem Puff (most commonly known as the Puffy Ottoman) is a core piece of the Puffy Seating Collection designed by British designer Faye Toogood for the Swedish brand, Hem. It is celebrated for its playful "contradiction" between a rigid industrial frame and an almost impossibly soft, duvet-like cushion'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/ottomans12.webp', '../pics/products/living-room/ottomans12-alt.webp', '../pics/products/living-room/ottomans12-alt-2.webp'],
+      name: 'Bauer Day Bed',
+      fullname: 'Bauer Day Bed',
+      category: 'ottomans',
+      price: {
+        original: 60000,
+        discounted: 48000
+      },
+      description: 'The Bauer Day Bed is a versatile, space-saving furniture piece designed for modern living. It is specifically engineered to function as both a sofa and a bed, making it a popular choice for studio apartments, guest rooms, or home offices where flexibility is key'
+    },
+
+    // array of consoles 
+    {
+      imgSrc: ['../pics/products/living-room/console1.webp'],
+      name: 'Mono Console',
+      fullname: 'Mono Console',
+      category: 'consoles',
+      price: {
+        original: 20000,
+        discounted: 14000
+      },
+      description: 'The Mono Console is a minimalist statement piece characterized by its clean, linear geometries and versatile design. It is often part of contemporary furniture collections (like those from Pianca or Habitt) that focus on a "pared-back" aesthetic, making it suitable as an entryway table, a slim desk, or a sofa-back console.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console2.webp', '../pics/products/living-room/console2-alt.webp', '../pics/products/living-room/console2-alt-2.webp'],
+      name: 'Ramzo Console with Mirror',
+      fullname: 'Ramzo Console with Mirror',
+      category: 'consoles',
+      price: {
+        original: 10000,
+        discounted: 8000
+      },
+      description: 'The Ramzo Console with Mirror is a modern, space-saving furniture set designed to add a clean, architectural touch to entryways or hallways. It is particularly popular for its slim profile, allowing it to fit into narrow spaces while providing a functional surface for daily essentials.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console3.webp', '../pics/products/living-room/console3-alt.webp', '../pics/products/living-room/console3-alt-2.webp'],
+      name: 'Pivot Wooden Shelf Console',
+      fullname: 'Pivot Wooden Shelf Console – Modern Multi-Tier Organizer',
+      category: 'consoles',
+      price: {
+        original: 48000,
+        discounted: 35000
+      },
+      description: 'The Pivot Wooden Shelf Console is a versatile, multi-tier organizer designed to maximize vertical space while adding a modern, architectural touch to your interior. It is particularly popular for its rotating or "pivot" capability, allowing you to adjust its shape to fit corners or act as a customized room divider.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console4.webp', '../pics/products/living-room/console4-alt.webp', '../pics/products/living-room/console4-alt-2.webp'],
+      name: 'Aura Full-Length Wooden Standing Mirror',
+      fullname: 'Aura Full-Length Wooden Standing Mirror – Elegant Adjustable Floor Mirror',
+      category: 'consoles',
+      price: {
+        original: 56000,
+        discounted: 40000
+      },
+      description: 'The Aura Full-Length Wooden Standing Mirror is a sophisticated dressing mirror designed to serve as both a functional tool and a piece of modern decor. Its hallmark is the adjustable tilting mechanism, which allows you to customize the reflection angle to suit your height or the room lighting.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console5.webp', '../pics/products/living-room/console5-alt.webp', '../pics/products/living-room/console5-alt-2.webp'],
+      name: 'Oafleaf Wall Mirror',
+      fullname: 'Oafleaf Wall Mirror – Modern Wooden Frame Decorative Mirror',
+      category: 'consoles',
+      price: {
+        original: 43000,
+        discounted: 40000
+      },
+      description: 'The Oafleaf Wall Mirror is a striking decorative piece that combines nature-inspired artistry with a modern, minimalist edge. Its most distinguishing feature is its organic leaf-inspired silhouette, which breaks away from traditional rectangular or round shapes to serve as functional wall art'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console6.webp', '../pics/products/living-room/console6-alt.webp', '../pics/products/living-room/console6-alt-2.webp'],
+      name: 'James Console',
+      fullname: 'James Console',
+      category: 'consoles',
+      price: {
+        original: 77000,
+        discounted: 50000
+      },
+      description: 'The James Console refers to several distinct furniture designs ranging from modern modular pieces to traditional solid wood tables. The most common modern version is a sleek, space-saving unit designed for entryways and high-traffic areas.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console7.webp', '../pics/products/living-room/console7-alt.webp', '../pics/products/living-room/console7-alt-2.webp'],
+      name: 'Kyoto Rotating Wall Mirror',
+      fullname: 'Kyoto Rotating Wall Mirror with Wooden Storage Shelves – Multi-Functional Organizer',
+      category: 'consoles',
+      price: {
+        original: 50000,
+        discounted: 35000
+      },
+      description: 'The Kyoto Rotating Wall Mirror is a clever, space-saving furniture solution that merges a full-length dressing mirror with a hidden storage organizer. Designed for high efficiency, it is an ideal addition to compact bedrooms, dressing rooms, or entryways.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console8.webp', '../pics/products/living-room/console8-alt.webp', '../pics/products/living-room/console8-alt-2.webp'],
+      name: 'Kenton Console',
+      fullname: 'Kenton Console',
+      category: 'consoles',
+      price: {
+        original: 80000,
+        discounted: 51000
+      },
+      description: 'The Kenton Console is a sleek, modern furniture piece often used in entryways and hallways. Depending on the brand, it typically follows one of two design directions: a high-end, mixed-material statement piece or a minimalist, industrial-style storage solution.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console9.webp', '../pics/products/living-room/console9-alt.webp', '../pics/products/living-room/console9-alt-2.webp'],
+      name: 'Pearl Console',
+      fullname: 'Pearl Console',
+      category: 'consoles',
+      price: {
+        original: 60000,
+        discounted: 55000
+      },
+      description: 'The Pearl Console is a sophisticated, mixed-material statement piece that balances industrial structural elements with a clean, modern tabletop. It is particularly well-suited for minimalist entryways or as a behind-the-sofa accent.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console10.webp', '../pics/products/living-room/console10-alt.webp', '../pics/products/living-room/console10-alt-2.webp'],
+      name: 'Veronica Console',
+      fullname: 'Veronica Console(Bernard Series 2)',
+      category: 'consoles',
+      price: {
+        original: 70000,
+        discounted: 61000
+      },
+      description: 'The Veronica Console (Bernard Series 2) is a sophisticated, low-profile furniture piece that blends organic materials with a refined, contemporary silhouette. Part of the broader Bernard Series, it is designed to add functional elegance to transition spaces like entryways and hallways.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/console11.webp', '../pics/products/living-room/console11-alt.webp', '../pics/products/living-room/console11-alt-2.webp'],
+      name: 'Franklin Console',
+      fullname: 'Franklin Console',
+      category: 'consoles',
+      price: {
+        original: 30000,
+        discounted: 25000
+      },
+      description: 'The Franklin Console is a versatile, high-quality furniture piece designed to add a touch of modern sophistication to your home transition spaces. Depending on the specific retailer (most notably Habitt), it is celebrated for its clean lines and durable construction.'
+    },
+
+    // array for entertainment units 
+    {
+      imgSrc: ['../pics/products/living-room/enjoy1.webp', '../pics/products/living-room/enjoy-alt.webp', '../pics/products/living-room/enjoy-alt-2.webp'],
+      name: 'Nora Tea Trolley',
+      fullname: 'Nora Tea Trolley',
+      category: 'living-room-entertainment',
+      price: {
+        original: 30000,
+        discounted: 25000
+      },
+      description: 'Whether you’re looking for the best seat in the house for a Sunday nap or a stylish accent piece to tie the room together, our collection of living room chairs is designed for both form and function'
+    },
+
+    {
+      imgSrc: ['../pics/products/living-room/enjoy2.webp', '../pics/products/living-room/enjoy2-alt.webp', '../pics/products/living-room/enjoy2-alt-2.webp'],
+      name: 'Nora Nest of Table Set',
+      fullname: 'Nora Nest of Table Set',
+      category: 'living-room-entertainment',
+      price: {
+        original: 55000,
+        discounted: 48000
+      },
+      description: 'The Nora Nest of Tables is the ultimate solution for the modern home where space is a premium but style is non-negotiable. Featuring a sleek, minimalist silhouette, this set offers a tiered aesthetic that adds architectural interest to your living room while providing maximum utility.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/enjoy3.webp', '../pics/products/living-room/enjoy3-alt.webp', '../pics/products/living-room/enjoy3-alt-2.webp'],
+      name: 'Nora 4 Person Dining Table',
+      fullname: 'Nora 4 Person Dining Table',
+      category: 'living-room-entertainment',
+      price: {
+        original: 259000,
+        discounted: 248000
+      },
+      description: 'The Nora 4-Person Dining Table is where modern minimalism meets everyday warmth. Designed specifically for smaller dining rooms, breakfast nooks, or stylish apartment living, this table provides a generous surface for four without overwhelming your floor plan.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/enjoy4.webp', '../pics/products/living-room/enjoy4-alt.webp', '../pics/products/living-room/enjoy4-alt-2.webp'],
+      name: 'Haven TV Unit',
+      fullname: 'Haven TV Unit',
+      category: 'living-room-entertainment',
+      price: {
+        original: 15000,
+        discounted: 120000
+      },
+      description: 'Transform your living area into a true retreat with the Haven TV Unit. True to its name, this piece is designed to bring a sense of calm and organization to your entertainment space, blending soft aesthetics with high-capacity storage.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/enjoy5.webp', '../pics/products/living-room/enjoy5-alt.webp', '../pics/products/living-room/enjoy5-alt-2.webp'],
+      name: 'Timberland Nest of Table Set',
+      fullname: 'Timberland Nest of Table Set',
+      category: 'living-room-entertainment',
+      price: {
+        original: 60000,
+        discounted: 52000
+      },
+      description: 'Bring a touch of the outdoors in with the Timberland Nest of Table Set. Inspired by the raw beauty of natural landscapes, this set celebrates the unique character of wood grain, knots, and textures. It’s the perfect companion for a cozy, rustic interior or a modern home looking for a grounded, earthy accent.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/enjoy6.webp', '../pics/products/living-room/enjoy6-alt.webp', '../pics/products/living-room/enjoy6-alt-2.webp'],
+      name: 'Timberland Shelf',
+      fullname: 'Timberland Shelf',
+      category: 'living-room-entertainment',
+      price: {
+        original: 169000,
+        discounted: 112000
+      },
+      description: 'The Timberland Shelf brings a rugged, architectural element to your walls, turning everyday storage into a curated display. Inspired by the sprawling beauty of old-growth forests, this shelving unit balances heavy-duty durability with the refined warmth of natural wood grains.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/enjoy7.webp', '../pics/products/living-room/enjoy7-alt.webp', '../pics/products/living-room/enjoy7-alt-2.webp'],
+      name: 'Timberland TV Unit',
+      fullname: 'Timberland TV Unit',
+      category: 'living-room-entertainment',
+      price: {
+        original: 130000,
+        discounted: 112000
+      },
+      description: 'Ground your entertainment space with the Timberland TV Unit, a piece that brings the soulful, steady presence of the forest into your living room. Designed for those who appreciate the raw beauty of natural materials, this unit balances a rugged, "lodge-inspired" aesthetic with the practical needs of a high-tech home.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/enjoy8.webp', '../pics/products/living-room/enjoy8-alt.webp', '../pics/products/living-room/enjoy8-alt-2.webp'],
+      name: 'Longzo tv unit',
+      fullname: 'Longzo tv unit',
+      category: 'living-room-entertainment',
+      price: {
+        original: 49000,
+        discounted: 30000
+      },
+      description: 'The Longzo TV Unit is a masterclass in understated retro-chic. Drawing inspiration from classic mid-century silhouettes, this piece brings a sense of rhythmic design to your entertainment space with its signature slatted or textured door fronts and tapered "compass" legs.'
+    },
+    {
+      imgSrc: ['../pics/products/living-room/enjoy9.webp', '../pics/products/living-room/enjoy9-alt.webp', '../pics/products/living-room/enjoy9-alt-2.webp'],
+      name: 'Roy tv unit',
+      fullname: 'Roy tv unit',
+      category: 'living-room-entertainment',
+      price: {
+        original: 89000,
+        discounted: 54000
+      },
+      description: 'The roy TV Unit is a masterclass in understated retro-chic. Drawing inspiration from classic mid-century silhouettes, this piece brings a sense of rhythmic design to your entertainment space with its signature slatted or textured door fronts and tapered "compass" legs.'
+    },
+
+
+
+
+
+
+
+
+
 
   ];
 
   products.forEach(function (item) {
-    createId(item)
+    item.id = crypto.randomUUID();
     if (item.category == 'bed') {
       generateHtml(item, bedroomBedsContainer);
       generateHtml(item, bedroomContainer);
@@ -1013,8 +2188,8 @@ $(document).ready(function () {
     } else if (item.category == 'consoles') {
       generateHtml(item, livingRoomConsoles);
       generateHtml(item, livingRoom);
-    } else if (item.category == 'living-room-chairs') {
-      generateHtml(item, livingRoomChairs);
+    } else if (item.category == 'living-room-entertainment') {
+      generateHtml(item, livingRoomEntertainment);
       generateHtml(item, livingRoom);
     } else if (item.category == 'ottomans') {
       generateHtml(item, livingRoomOttomans);
@@ -1022,8 +2197,8 @@ $(document).ready(function () {
     } else if (item.category == 'shoe-racks') {
       generateHtml(item, livingRoomShoeRacks);
       generateHtml(item, livingRoom);
-    } else if (item.category == 'living-room-tables') {
-      generateHtml(item, livingRoomTables);
+    } else if (item.category == 'living-room-sofas') {
+      generateHtml(item, livingRoomSofas);
       generateHtml(item, livingRoom);
 
     } else if (item.category == 'office-chairs') {
@@ -1043,9 +2218,6 @@ $(document).ready(function () {
       generateHtml(item, officeRoom);
     }
   });
-  function createId(item) {
-    item.id = crypto.randomUUID();
-  }
 
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -1078,7 +2250,8 @@ $(document).ready(function () {
         $('.product-modal-body').html(`
       <div class="row">
               <div class="col-md-6">
-                <img src="${item.imgSrc[0]}" width="100%" class="main-display-image" alt="image not found">
+                <img src="${item.imgSrc[0]}" width="100%" class="main-display-image position-relative" alt="image not found">
+                <span style="top: 30px; left: 30px;" class="position-absolute bg-danger text-white rounded-pill px-5 py-3 shadow">${Math.round((item.price.original - item.price.discounted) / item.price.original * 100)}% Sale</span>
                 <div class="display-images">
                   <img src="${item.imgSrc[0]}" width="100px" alt="image not found" class="display-image">
                 </div>
@@ -1100,12 +2273,13 @@ $(document).ready(function () {
                     </span>
                   </div>
                   <p class="sub-total fs-4">Subtotal: <span class="text-success fs-4">Rs. ${quantity * price}</span></p>
-                  <a class="btn btn-outline-dark px-5 py-3 mt-2 rounded-pill order-now" href="../order.html">Buy Now</a>
-                  <a class="btn btn-outline-dark px-5 py-3 mt-2 rounded-pill add_to_cart" href="#">Add To Cart</a>
+                  <a class="btn btn-outline-dark px-5 py-3 w-75 mt-2 rounded-pill order-now" data-bs-dismiss="modal" aria-label="Close" href="#">Buy Now</a>
+                  <a class="btn btn-outline-dark px-5 py-3 w-75 mt-2 rounded-pill add_to_cart" href="#">Add To Cart</a>
                 </div>
               </div>
             </div>
       `);
+
         $('.increase-quantity').on('click', function () {
           quantity++;
           $('.quantity').html(quantity);
@@ -1129,10 +2303,19 @@ $(document).ready(function () {
         `)
         }
 
-        $('.display-image').on('click', function (event) {
+        $('.display-image').on('mouseenter', function (event) {
           const imageSource = event.target.src;
           $('.main-display-image')[0].src = imageSource;
         });
+        $('.display-image').on('mouseleave', function () {
+          $('.main-display-image')[0].src = item.imgSrc[0];
+        });
+
+
+
+
+
+
         $('.add_to_cart').click(function () {
           cartItemCount++;
           cartItemQuantity = quantity;
@@ -1140,21 +2323,38 @@ $(document).ready(function () {
           let title = item.name;
           let price = item.price.discounted;
           let id = item.id;
-          cart.push({
-            imgSrc,
-            name: title,
-            price: price * quantity,
-            quantity,
-            id
-          });
+          let existingItem = cart.find(item => item.name === title);
+
+          if (existingItem) {
+            existingItem.quantity++;
+          } else {
+            cart.push({
+              imgSrc,
+              name: title,
+              price: price * quantity,
+              quantity,
+              id
+            });
+          }
+          updateCart();
+
 
           localStorage.setItem('cart', JSON.stringify(cart));
-          location.reload();
         });
+
+        $('.order-now').click(function () {
+          Swal.fire({
+            title: "Success!",
+            text: "Your order has been placed successfully!",
+            icon: "success"
+          });
+        });
+
+
+
       }
     });
   });
-
   const searchButton = $('.search-button');
   const cardTitle = $('.card-title');
 
@@ -1192,11 +2392,61 @@ $(document).ready(function () {
 
   let cartItemCount = 0;
   let cartItemQuantity = 1;
-  if (cart.length == 0) {
-    $('#order').html('<p class="text-center fs-2 text-muted pt-5">Your cart is empty</p>');
+  updateCart();
+
+  $('.add-to-cart').click(function (event) {
+    cartItemCount++;
+    let cardId = event.target.parentElement.id;
+    products.forEach(function (item) {
+
+      if (cardId == item.id) {
+        let imgSrc = item.imgSrc[0];
+        let title = item.name;
+        let price = item.price.discounted;
+        let quantity = cartItemQuantity;
+        let id = item.id;
+
+        let existingItem = cart.find(cartItem => cartItem.name == title);
+
+        if (existingItem) {
+          existingItem.quantity++;
+        } else {
+          cart.push({
+            imgSrc,
+            name: title,
+            price: price * quantity,
+            quantity,
+            id
+          });
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCart();
+      }
+    });
+
+  });
+  function item_count() {
+    $("#cart_item_count").text(cart.length);
   }
-  cart.forEach(function (item) {
-    let cartItem = `
+  $('#order_btn').attr('data-bs-dismiss', 'offcanvas');
+  $('#order_btn').attr('aria-label', 'Close');
+  $('#order_btn').removeAttr('href');
+  $('#order_btn').click(function () {
+    Swal.fire({
+      title: "Success!",
+      text: "Your order has been placed successfully!",
+      icon: "success"
+    }).then(function () {
+      localStorage.removeItem('cart');
+      location.reload();
+    });
+  });
+
+  function updateCart() {
+    $('#order').html('');
+    cart.forEach(function (item) {
+
+      let cartItem = `
     <div class="row flex-nowrap align-items-center border-bottom py-3 m-0" id="${item.id}">
 
   <div class="col-3 text-center">
@@ -1223,67 +2473,38 @@ $(document).ready(function () {
 
 </div>
     `;
-    $('#order').append(cartItem);
-    $("#cart_item_count").text(cartItemCount);
-    $(".close").click(function (event) {
-      const card = event.target.parentElement.parentElement;
-      if (card.id == item.id) {
-        const index = cart.indexOf(item);
-        if (index > -1) {
-          cart.splice(index, 1);
+
+      $('#order').append(cartItem);
+      $("#cart_item_count").text(cartItemCount);
+      $(".close").click(function (event) {
+        const card = event.target.parentElement.parentElement;
+        if (card.id == item.id) {
+          const index = cart.indexOf(item);
+          if (index > -1) {
+            cart.splice(index, 1);
+          }
+
+          card.remove();
+          localStorage.setItem('cart', JSON.stringify(cart));
+          if (cart.length == 0) {
+            $('#order').html('<p class="text-center fs-2 text-muted pt-5">Your cart is empty</p>');
+          } 
         }
 
-        card.remove();
-        localStorage.setItem('cart', JSON.stringify(cart));
-        if (cart.length == 0) {
-          $('#order').html('<p class="text-center fs-2 text-muted pt-5">Your cart is empty</p>');
-        }
-      }
-
+        item_count();
+      });
       item_count();
-    });
 
+    });
     item_count();
-
-  });
-  $('.add-to-cart').click(function (event) {
-    cartItemCount++;
-    let cardId = event.target.parentElement.id;
-    products.forEach(function (item) {
-      if (cardId == item.id) {
-        let imgSrc = item.imgSrc[0];
-        let title = item.name;
-        let price = item.price.discounted;
-        let quantity = cartItemQuantity;
-        let id = item.id;
-        cart.push({
-          imgSrc,
-          name: title,
-          price,
-          quantity,
-          id
-        });
-
-        localStorage.setItem('cart', JSON.stringify(cart));
-      }
-      location.reload();
-    });
-
-  });
-  function item_count() {
-    let res = cart.length;
-    $("#cart_item_count").text(res);
-  }
-
-  $('#order_btn').click(function () {
-    localStorage.removeItem('cart');
-  })
+  };
 
 
   function generateHtml(item, container) {
     container.append(`
         <div class="card col-md-3 me-3 mb-3" id=${item.id} style="width: 18rem;">
           <img src="${item.imgSrc[0]}" class="card-img-top position-relative" data-bs-toggle="modal" data-bs-target="#product-backdrop" height="200px" alt="...">
+          <span style="top: 10px; left: 20px;" class="position-absolute bg-danger text-white rounded-pill px-3 py-2 shadow">${Math.round((item.price.original - item.price.discounted) / item.price.original * 100)}% Sale</span>
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text"><del class="text-secondary">Rs. ${item.price.original}</del> <span class="text-danger ms-2 fw-bold">Rs. ${item.price.discounted}</span></p>
